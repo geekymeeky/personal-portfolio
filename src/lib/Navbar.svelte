@@ -3,7 +3,7 @@
 
 <nav id="navbar" class="navbar">
   <div class="navbar-brand">
-    <a class="navbar-item" href="https://bulma.io"> Srijan </a>
+    <a class="navbar-item" href="https://bulma.io"> Srijan Gupta </a>
   </div>
   <div class="nav-menu__wrapper">
     <ul class="nav-menu">
