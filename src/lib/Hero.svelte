@@ -58,6 +58,8 @@
   }
   .hero__title {
     text-align: center;
+    padding-left: 6.5rem;
+    padding-right: 6.5rem;
   }
   .hero__svg {
     position: absolute;
@@ -67,5 +69,11 @@
     margin-left: 1rem;
     animation: bounce 1s infinite;
     filter: invert();
+  }
+  @media (max-width: 768px) {
+    .hero__title {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 </style>
