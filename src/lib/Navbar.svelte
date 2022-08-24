@@ -23,7 +23,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 5rem;
+    padding: 0.5rem 6.875rem;
     z-index: 9;
   }
   .navbar-brand > a {

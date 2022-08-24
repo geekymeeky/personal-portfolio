@@ -1,9 +1,13 @@
 <script>
-  const scroll = () => window.scrollBy(0, window.innerHeight);
+  const scroll = () =>
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: "smooth",
+    });
 </script>
 
 <section class="hero">
-  <h1>
+  <h1 class="hero__title">
     I’m a developer specialising in <span>Web</span> and <span>Android</span> app
     development
   </h1>
@@ -51,6 +55,9 @@
     justify-content: center;
     align-items: center;
     position: relative;
+  }
+  .hero__title {
+    text-align: center;
   }
   .hero__svg {
     position: absolute;
