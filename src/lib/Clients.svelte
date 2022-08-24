@@ -1,8 +1,8 @@
 <script>
-  //   import airbnb from "../assets/airbnb.png";
-  //   import google from "../assets/google.png";
-  //   import microsoft from "../assets/microsoft.png";
-  //   import fedex from "../assets/fedex.png";
+  import airbnb from "../assets/airbnb.png";
+  import google from "../assets/google.png";
+  import microsoft from "../assets/microsoft.png";
+  import fedex from "../assets/fedex.png";
 </script>
 
 <section class="container client">
@@ -10,15 +10,10 @@
     Some of <span>the clients I have <br />worked for</span>
   </h2>
   <div class="client_logos">
-    <img src="https://picsum.photos/200/100" alt="client logo" />
-    <img src="https://picsum.photos/200/100" alt="client logo" />
-    <img src="https://picsum.photos/200/100" alt="client logo" />
-    <img src="https://picsum.photos/200/100" alt="client logo" />
-
-    <!-- <img src={airbnb} alt="client logo" />
+    <img src={airbnb} alt="client logo" />
     <img src={google} alt="client logo" />
     <img src={microsoft} alt="client logo" />
-    <img src={fedex} alt="client logo" /> -->
+    <img src={fedex} alt="client logo" />
   </div>
 </section>
 
@@ -48,5 +43,11 @@
   .client_logos > img:hover {
     filter: grayscale(0);
     -webkit-filter: grayscale(0);
+  }
+  @media (max-width: 768px) {
+    .client_logos {
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
   }
 </style>
