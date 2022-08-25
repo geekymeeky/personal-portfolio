@@ -75,7 +75,8 @@
     padding: 1rem 2rem;
     border-radius: 5rem;
     background: none;
-    border: 1px solid var(--color-neutral-1);
+    border: 1px solid;
+    border-color: var(--color-neutral-1);
     width: 189px;
     color: var(--color-neutral-1);
     font-size: 16px;
