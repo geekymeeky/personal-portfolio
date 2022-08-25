@@ -1,5 +1,6 @@
 <script>
   import Clients from "./lib/Clients.svelte";
+  import Footer from "./lib/Footer.svelte";
   import Hero from "./lib/Hero.svelte";
   import Navbar from "./lib/Navbar.svelte";
   import Projects from "./lib/Projects.svelte";
@@ -11,6 +12,7 @@
   <Clients />
   <Projects />
 </main>
+<Footer />
 
 <style>
   main {
