@@ -1,37 +1,30 @@
 [
     {
         "name": "Mausam",
-        "description": ["A simple flutter weather app that can", "fetch weather based on the current location or city you specify."],
-        "domain": "App Development",
-        "link": "https://www.google.com",
+        "description": ["A weather app that can", "fetch weather based on the current location or city you specify."],
+        "domain": "Cross Platform",
+        "link": "https://github.com/geekymeeky/Mausam",
         "image": "./mausam.png"
     },
     {
-        "name": "Real estate Template",
-        "description": ["Lorem ipsum dolor sit amet, consectetur", "adipiscing elit. Ultrices lorem non feugiat egestas amet."],
-        "domain": "App Development",
-        "link": "https://www.google.com",
+        "name": "E-Bureau",
+        "description": ["E-Bureau is an online", "Crime managment System which aims to helps in reducing and managing crime."],
+        "domain": "Web Application",
+        "link": "https://github.com/hackatooons/e-bureau",
         "image": "./green.png"
     },
     {
-        "name": "Real estate Template",
-        "description": ["Lorem ipsum dolor sit amet, consectetur", "adipiscing elit. Ultrices lorem non feugiat egestas amet."],
-        "domain": "App Development",
-        "link": "https://www.google.com",
+        "name": "DataMed",
+        "description": ["DataMed predicts", "severity of Disease using Machine Learning"],
+        "domain": "Web Application",
+        "link": "https://github.com/geekymeeky/DataMed",
         "image": "./red.png"
     },
     {
-        "name": "Real estate Template",
-        "description": ["Lorem ipsum dolor sit amet, consectetur", "adipiscing elit. Ultrices lorem non feugiat egestas amet."],
-        "domain": "App Development",
-        "link": "https://www.google.com",
+        "name": "Book Finder",
+        "description": ["Book Finder is a web application", "that helps in finding books based on the search criteria."],
+        "domain": "Web Application",
+        "link": "https://github.com/geekymeeky/Book-finder",
         "image": "./blue.png"
-    },
-    {
-        "name": "Real estate Template",
-        "description": ["Lorem ipsum dolor sit amet, consectetur", "adipiscing elit. Ultrices lorem non feugiat egestas amet."],
-        "domain": "App Development",
-        "link": "https://www.google.com",
-        "image": "./green.png"
     }
 ]
