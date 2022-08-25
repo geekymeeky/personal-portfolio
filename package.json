@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "postbuild": "npx svelte-sitemap --domain https://srijankgupta.vercel.app -o dist",
     "preview": "vite preview"
   },
   "devDependencies": {
