@@ -76,4 +76,10 @@
       padding-right: 0;
     }
   }
+
+  @media (prefers-color-scheme: light) {
+    .hero__svg {
+      filter: none;
+    }
+  }
 </style>
