@@ -15,6 +15,7 @@
           <h3 class="project__description">
             {project.description[0]} <span>{project.description[1]}</span>
           </h3>
+          <p class="project__domain">{project.domain}</p>
           <a class="project__link" href={project.link} target="_blank">
             <span>View Work</span>
             &nbsp;
@@ -52,6 +53,15 @@
   }
   .project__title {
     text-transform: uppercase;
+  }
+  .project__domain {
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 0.625rem 0rem;
   }
   .project__content {
     width: 100%;
