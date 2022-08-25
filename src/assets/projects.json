@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Mausam",
+        "description": ["A simple flutter weather app that can", "fetch weather based on the current location or city you specify."],
+        "domain": "App Development",
+        "link": "https://www.google.com",
+        "image": "https://via.placeholder.com/600x400"
+    },
+    {
+        "name": "Real estate Template",
+        "description": ["Lorem ipsum dolor sit amet, consectetur", "adipiscing elit. Ultrices lorem non feugiat egestas amet."],
+        "domain": "App Development",
+        "link": "https://www.google.com",
+        "image": "https://via.placeholder.com/600x400"
+    },
+    {
+        "name": "Real estate Template",
+        "description": ["Lorem ipsum dolor sit amet, consectetur", "adipiscing elit. Ultrices lorem non feugiat egestas amet."],
+        "domain": "App Development",
+        "link": "https://www.google.com",
+        "image": "https://via.placeholder.com/600x400"
+    },
+    {
+        "name": "Real estate Template",
+        "description": ["Lorem ipsum dolor sit amet, consectetur", "adipiscing elit. Ultrices lorem non feugiat egestas amet."],
+        "domain": "App Development",
+        "link": "https://www.google.com",
+        "image": "https://via.placeholder.com/600x400"
+    },
+    {
+        "name": "Real estate Template",
+        "description": ["Lorem ipsum dolor sit amet, consectetur", "adipiscing elit. Ultrices lorem non feugiat egestas amet."],
+        "domain": "App Development",
+        "link": "https://www.google.com",
+        "image": "https://via.placeholder.com/600x400"
+    }
+]

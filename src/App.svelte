@@ -2,12 +2,14 @@
   import Clients from "./lib/Clients.svelte";
   import Hero from "./lib/Hero.svelte";
   import Navbar from "./lib/Navbar.svelte";
+  import Projects from "./lib/Projects.svelte";
 </script>
 
 <main>
   <Navbar />
   <Hero />
   <Clients />
+  <Projects />
 </main>
 
 <style>
