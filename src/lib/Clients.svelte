@@ -1,8 +1,8 @@
 <script>
-  import airbnb from "../assets/airbnb.png";
-  import google from "../assets/google.png";
-  import microsoft from "../assets/microsoft.png";
-  import fedex from "../assets/fedex.png";
+  import iema from "../assets/iema.png";
+  import gssoc from "../assets/gssoc.png";
+  import gdscciem from "../assets/gdscciem.png";
+  import gdgcloudkolkata from "../assets/gdgcloudkolkata.png";
 </script>
 
 <section class="container client">
@@ -10,10 +10,10 @@
     Some of <span>the clients I have <br />worked for</span>
   </h2>
   <div class="client_logos">
-    <img src={airbnb} alt="client logo" />
-    <img src={google} alt="client logo" />
-    <img src={microsoft} alt="client logo" />
-    <img src={fedex} alt="client logo" />
+    <img src={iema} alt="client logo" />
+    <img src={gdgcloudkolkata} alt="client logo" />
+    <img src={gssoc} alt="client logo" />
+    <img src={gdscciem} alt="client logo" />
   </div>
 </section>
 
@@ -32,8 +32,8 @@
   .client_logos > img {
     width: auto;
     height: auto;
-    max-width: 100%;
-    max-height: 100%;
+    max-height: 8rem;
+    max-width: 20rem;
     margin: 1rem;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
