@@ -3,12 +3,12 @@
 
 <nav id="navbar" class="navbar">
   <div class="navbar-brand">
-    <a class="navbar-item" href="https://bulma.io"> Srijan Gupta </a>
+    <a class="navbar-item" href="/"> Srijan Gupta </a>
   </div>
   <div class="nav-menu__wrapper">
     <ul class="nav-menu">
       {#each ["Home", "Work", "About"] as navItem}
-        <li class="nav-item"><a href="https://bulma.io/">{navItem}</a></li>
+        <li class="nav-item"><a href={`#${navItem}`}>{navItem}</a></li>
       {/each}
     </ul>
   </div>

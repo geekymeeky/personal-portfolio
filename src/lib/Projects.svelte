@@ -3,7 +3,7 @@
   import Icon from "@iconify/svelte";
 </script>
 
-<section class="container projects">
+<section class="container projects" id="Work">
   <h2 class="projects__title">
     Featured <span>Projects</span>
   </h2>
