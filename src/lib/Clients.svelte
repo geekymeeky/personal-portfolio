@@ -1,8 +1,8 @@
 <script>
-  import iema from "../assets/iema.png";
-  import gssoc from "../assets/gssoc.png";
-  import gdscciem from "../assets/gdscciem.png";
-  import gdgcloudkolkata from "../assets/gdgcloudkolkata.png";
+  import iema from "../assets/iema.webp";
+  import gssoc from "../assets/gssoc.webp";
+  import gdscciem from "../assets/gdscciem.webp";
+  import gdgcloudkolkata from "../assets/gdgcloudkolkata.webp";
 </script>
 
 <section class="container client">
