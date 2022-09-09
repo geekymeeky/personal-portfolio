@@ -26,7 +26,12 @@
           </a>
         </div>
         <div class="project__image">
-          <img src={project.image} alt={project.name} />
+          <img
+            src={project.image}
+            alt={project.name}
+            width="591"
+            height="500"
+          />
         </div>
       </div>
     {/each}
@@ -48,7 +53,6 @@
     justify-content: space-between;
     gap: 1.875rem;
     position: relative;
-    min-height: 30.625rem;
     padding: 6.063rem 0rem;
   }
   .project__title {
@@ -94,7 +98,6 @@
   }
   .project__image > img {
     border-radius: 0.25rem;
-    width: 100%;
   }
   .project:nth-child(even) {
     flex-direction: row-reverse;
