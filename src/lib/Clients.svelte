@@ -30,10 +30,8 @@
     padding-bottom: 3.125rem;
   }
   .client_logos > img {
-    width: auto;
-    height: auto;
-    max-height: 8rem;
-    max-width: 20rem;
+    object-fit: contain;
+    height: 100px;
     margin: 1rem;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
@@ -47,6 +45,8 @@
   @media (max-width: 768px) {
     .client_logos {
       flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
       gap: 1rem;
     }
   }
