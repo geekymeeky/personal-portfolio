@@ -7,25 +7,41 @@
     <h1>Get <span>in Touch</span></h1>
     <p class="footer__subtitle">So that we can talk more about...</p>
     <div class="footer__links">
-      <a href="mailto:gupta.srijan94@gmail.com" target="_blank">
+      <a
+        href="mailto:gupta.srijan94@gmail.com"
+        target="_blank"
+        aria-label="Email"
+      >
         <Icon
           icon="akar-icons:envelope"
           style="width: 2rem; height: 2rem;  color: var(--color-neutral-2);"
         />
       </a>
-      <a href="https://github.com/geekymeeky" target="_blank">
+      <a
+        href="https://github.com/geekymeeky"
+        target="_blank"
+        aria-label="Github"
+      >
         <Icon
           icon="akar-icons:github-fill"
           style="width: 2rem; height: 2rem; color: var(--color-neutral-2);"
         />
       </a>
-      <a href="https://twitter.com/srijankrgupta" target="_blank">
+      <a
+        href="https://twitter.com/srijankrgupta"
+        target="_blank"
+        aria-label="Twitter"
+      >
         <Icon
           icon="akar-icons:twitter-fill"
           style="width: 2rem; height: 2rem; color: var(--color-neutral-2);"
         />
       </a>
-      <a href="https://www.linkedin.com/in/srijankrgupta/" target="_blank">
+      <a
+        href="https://www.linkedin.com/in/srijankrgupta/"
+        target="_blank"
+        aria-label="LinkedIn"
+      >
         <Icon
           icon="akar-icons:linkedin-fill"
           style="width: 2rem; height: 2rem; color: var(--color-neutral-2);"

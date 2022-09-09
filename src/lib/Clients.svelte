@@ -30,9 +30,9 @@
     padding-bottom: 3.125rem;
   }
   .client_logos > img {
-    object-fit: contain;
+    width: 200px;
     height: 100px;
-    margin: 1rem;
+    object-fit: contain;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     transition: filter 0.3s ease-in-out;

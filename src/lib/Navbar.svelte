@@ -36,26 +36,32 @@
       {#each ["Home", "Work", "About"] as navItem}
         <li class="nav-item"><a href={`#${navItem}`}>{navItem}</a></li>
       {/each}
-      <input
-        type="checkbox"
-        class="checkbox"
-        id="checkbox"
-        bind:checked
-        on:change={() => {
-          if (checked) {
-            document.documentElement.setAttribute("data-theme", "dark");
-            localStorage.setItem("theme", "dark");
-          } else {
-            document.documentElement.setAttribute("data-theme", "light");
-            localStorage.setItem("theme", "light");
-          }
-        }}
-      />
-      <label for="checkbox" class="checkbox-label">
-        <Icon class="night-icon" icon="mdi:weather-night" />
-        <Icon class="day-icon" icon="mdi:weather-sunny" />
-        <span class="ball" />
-      </label>
+      <li class="nav-item">
+        <input
+          type="checkbox"
+          class="checkbox"
+          id="checkbox"
+          bind:checked
+          on:change={() => {
+            if (checked) {
+              document.documentElement.setAttribute("data-theme", "dark");
+              localStorage.setItem("theme", "dark");
+            } else {
+              document.documentElement.setAttribute("data-theme", "light");
+              localStorage.setItem("theme", "light");
+            }
+          }}
+        />
+        <label
+          for="checkbox"
+          class="checkbox-label"
+          aria-label="Toggle Dark Mode"
+        >
+          <Icon class="night-icon" icon="mdi:weather-night" />
+          <Icon class="day-icon" icon="mdi:weather-sunny" />
+          <span class="ball" />
+        </label>
+      </li>
     </ul>
   </div>
 </nav>
