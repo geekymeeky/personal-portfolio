@@ -1,5 +1,5 @@
 <script>
-  import data from "../assets/projects.json";
+  import data from "../../assets/projects.json";
   import Icon from "@iconify/svelte";
 </script>
 
@@ -112,6 +112,10 @@
       flex-direction: column;
       gap: 1.25rem;
       padding: 3.063rem 0rem;
+    }
+    .project__image > img {
+      width: 100%;
+      height: auto;
     }
     .project:nth-child(even) {
       flex-direction: column;

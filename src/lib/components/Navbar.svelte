@@ -1,6 +1,23 @@
 <script>
+  import { Link } from "svelte-routing";
   import Icon from "@iconify/svelte";
   let checked = true;
+  let menu = false;
+
+  let routes = [
+    {
+      name: "Home",
+      path: "/",
+    },
+    {
+      name: "About",
+      path: "/about",
+    },
+    {
+      name: "Experience",
+      path: "/experience",
+    },
+  ];
 
   //determines if the user has a set theme
   function detectColorScheme() {
@@ -31,37 +48,44 @@
   <div class="navbar-brand">
     <a class="navbar-item" href="/"> Srijan Gupta </a>
   </div>
+  <input
+    type="checkbox"
+    class="checkbox"
+    id="checkbox"
+    bind:checked
+    on:change={() => {
+      if (checked) {
+        document.documentElement.setAttribute("data-theme", "dark");
+        localStorage.setItem("theme", "dark");
+      } else {
+        document.documentElement.setAttribute("data-theme", "light");
+        localStorage.setItem("theme", "light");
+      }
+    }}
+  />
+  <label for="checkbox" class="checkbox-label" aria-label="Toggle Dark Mode">
+    <Icon class="night-icon" icon="mdi:weather-night" />
+    <Icon class="day-icon" icon="mdi:weather-sunny" />
+    <span class="ball" />
+  </label>
   <div class="nav-menu__wrapper">
-    <ul class="nav-menu">
-      {#each ["Home", "Work", "About"] as navItem}
-        <li class="nav-item"><a href={`#${navItem}`}>{navItem}</a></li>
+    <div role="button" on:click={() => (menu = !menu)} class="navbar-burger">
+      <Icon
+        icon={menu ? "ci:close-big" : "ci:menu-alt-01"}
+        style="width: 2.5rem; height: 2.5rem;"
+        class="nav-menu"
+      />
+    </div>
+    <ul class="nav-menu" id="nav-menu" class:active={menu}>
+      {#each routes as navItem}
+        <li class="nav-item">
+          {#if navItem.path.startsWith("#")}
+            <a href={navItem.path} class="nav-link">{navItem.name}</a>
+          {:else}
+            <Link to={navItem.path} class="nav-link">{navItem.name}</Link>
+          {/if}
+        </li>
       {/each}
-      <li class="nav-item">
-        <input
-          type="checkbox"
-          class="checkbox"
-          id="checkbox"
-          bind:checked
-          on:change={() => {
-            if (checked) {
-              document.documentElement.setAttribute("data-theme", "dark");
-              localStorage.setItem("theme", "dark");
-            } else {
-              document.documentElement.setAttribute("data-theme", "light");
-              localStorage.setItem("theme", "light");
-            }
-          }}
-        />
-        <label
-          for="checkbox"
-          class="checkbox-label"
-          aria-label="Toggle Dark Mode"
-        >
-          <Icon class="night-icon" icon="mdi:weather-night" />
-          <Icon class="day-icon" icon="mdi:weather-sunny" />
-          <span class="ball" />
-        </label>
-      </li>
     </ul>
   </div>
 </nav>
@@ -101,15 +125,7 @@
     list-style: none;
     text-align: center;
   }
-  .nav-item > a {
-    font-weight: 600;
-    font-size: 0.8rem;
-    font-feature-settings: "liga" off;
-    line-height: 150%;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: var(--color-neutral-1);
-  }
+
   .checkbox {
     opacity: 0;
     position: absolute;
@@ -145,9 +161,13 @@
   .checkbox:checked + .checkbox-label .ball {
     transform: translateX(24px);
   }
+  .navbar-burger {
+    display: none;
+  }
   @media (max-width: 768px) {
     .navbar {
       padding: 1rem 1rem;
+      background: var(--color-bg);
     }
     .nav-menu {
       flex-direction: column;
@@ -157,10 +177,18 @@
       right: 0;
       width: 100%;
       gap: 0.5rem;
+      display: none;
+      background: var(--color-bg);
+    }
+    .nav-menu.active {
+      display: flex;
     }
     .nav-item {
       padding: 1rem 2rem;
       list-style: none;
+    }
+    .navbar-burger {
+      display: block;
     }
   }
 </style>
