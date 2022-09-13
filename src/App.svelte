@@ -1,18 +1,21 @@
 <script>
-  import Clients from "./lib/Clients.svelte";
-  import Footer from "./lib/Footer.svelte";
-  import Hero from "./lib/Hero.svelte";
-  import Navbar from "./lib/Navbar.svelte";
-  import Projects from "./lib/Projects.svelte";
+  import { Router, Route } from "svelte-routing";
+  import Footer from "./lib/components/Footer.svelte";
+  import Navbar from "./lib/components/Navbar.svelte";
+  import About from "./lib/pages/About.svelte";
+  import Home from "./lib/pages/Home.svelte";
+  export let url = "";
 </script>
 
-<main>
-  <Navbar />
-  <Hero />
-  <Clients />
-  <Projects />
-</main>
-<Footer />
+<Router {url}>
+  <main>
+    <Navbar />
+    <Route path="about" component={About} />
+    <Route path="experience" component={About} />
+    <Route path="/" component={Home} />
+  </main>
+  <Footer />
+</Router>
 
 <style>
   main {
