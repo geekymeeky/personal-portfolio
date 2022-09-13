@@ -10,6 +10,7 @@
       <a
         href="mailto:gupta.srijan94@gmail.com"
         target="_blank"
+        rel="noopener noreferrer"
         aria-label="Email"
       >
         <Icon
@@ -20,6 +21,7 @@
       <a
         href="https://github.com/geekymeeky"
         target="_blank"
+        rel="noopener noreferrer"
         aria-label="Github"
       >
         <Icon
@@ -30,6 +32,7 @@
       <a
         href="https://twitter.com/srijankrgupta"
         target="_blank"
+        rel="noopener noreferrer"
         aria-label="Twitter"
       >
         <Icon
@@ -40,6 +43,7 @@
       <a
         href="https://www.linkedin.com/in/srijankrgupta/"
         target="_blank"
+        rel="noopener noreferrer"
         aria-label="LinkedIn"
       >
         <Icon
