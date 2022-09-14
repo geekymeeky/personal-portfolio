@@ -41,6 +41,10 @@
       logo: "https://img.icons8.com/color/48/000000/mongodb.png",
     },
     {
+      name: "Redux",
+      logo: "https://img.icons8.com/color/48/000000/redux.png",
+    },
+    {
       name: "Next",
       logo: "https://img.icons8.com/color/48/000000/nextjs.png",
     },
@@ -136,7 +140,13 @@
     <div class="grid">
       {#each technologies as tech}
         <div class="grid-item">
-          <img src={tech.logo} alt={tech.name} />
+          <img
+            src={tech.logo}
+            alt={tech.name}
+            loading="lazy"
+            width="48"
+            height="48"
+          />
           <p>{tech.name}</p>
         </div>
       {/each}
