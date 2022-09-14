@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "postbuild": "npx sitemap listofurls.txt > dist/sitemap.xml",
     "preview": "vite preview"
   },
   "devDependencies": {
