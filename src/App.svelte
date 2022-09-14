@@ -8,8 +8,8 @@
 </script>
 
 <Router {url}>
+  <Navbar />
   <main>
-    <Navbar />
     <Route path="about" component={About} />
     <Route path="experience" component={About} />
     <Route path="/" component={Home} />

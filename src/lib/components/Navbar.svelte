@@ -98,15 +98,17 @@
     color: #fff;
   }
   .navbar {
-    position: absolute;
+    position: sticky;
     left: 0px;
     right: 0px;
     top: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 6.875rem;
+    padding: 1rem 6.875rem;
     z-index: 9;
+    backdrop-filter: blur(10px);
+    transition: all 0.5s ease;
   }
   .navbar-brand > a {
     background: var(--color-primary);
@@ -120,6 +122,7 @@
     display: flex;
     padding: 0;
     gap: 2rem;
+    margin: 0;
   }
   .nav-item {
     list-style: none;
@@ -182,7 +185,17 @@
     }
     .nav-menu.active {
       display: flex;
+      animation: fadeIn 0.5s ease-in-out;
     }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
     .nav-item {
       padding: 1rem 2rem;
       list-style: none;
