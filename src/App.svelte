@@ -3,6 +3,7 @@
   import Footer from "./lib/components/Footer.svelte";
   import Navbar from "./lib/components/Navbar.svelte";
   import About from "./lib/pages/About.svelte";
+  import Experience from "./lib/pages/Experience.svelte";
   import Home from "./lib/pages/Home.svelte";
   export let url = "";
 </script>
@@ -11,7 +12,7 @@
   <Navbar />
   <main>
     <Route path="about" component={About} />
-    <Route path="experience" component={About} />
+    <Route path="experience" component={Experience} />
     <Route path="/" component={Home} />
   </main>
   <Footer />
