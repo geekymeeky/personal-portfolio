@@ -68,7 +68,7 @@
     height: 5rem;
     margin-left: 1rem;
     animation: bounce 1s infinite;
-    filter: invert();
+    filter: invert(1);
   }
   @media (max-width: 768px) {
     .hero__title {
@@ -76,10 +76,7 @@
       padding-right: 0;
     }
   }
-
-  @media (prefers-color-scheme: light) {
-    .hero__svg {
-      filter: none;
-    }
+  :global([data-theme="light"]) .hero__svg {
+    filter: invert(0);
   }
 </style>
