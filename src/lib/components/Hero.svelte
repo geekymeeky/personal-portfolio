@@ -69,6 +69,7 @@
     margin-left: 1rem;
     animation: bounce 1s infinite;
     filter: invert(1);
+    cursor: pointer;
   }
   @media (max-width: 768px) {
     .hero__title {
