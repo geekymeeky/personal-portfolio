@@ -1,0 +1,114 @@
+{
+  "about": "I'm a self-taught web developer and Mobile App Developer with experience in designing new features from ideation to production, implementation of wireframes and design flows into high performance software applications. I take into consideration the user experience while writing reusable and efficient code. I passionately combine good design, technology, and innovation in all my projects, which I like to accompany from the first idea to release. Currently, I'm focused on the backend development.",
+  "technologies": [
+    {
+      "name": "HTML",
+      "logo": "https://img.icons8.com/color/48/000000/html-5.png"
+    },
+    {
+      "name": "CSS",
+      "logo": "https://img.icons8.com/color/48/000000/css3.png"
+    },
+    {
+      "name": "Sass",
+      "logo": "https://img.icons8.com/color/48/000000/sass.png"
+    },
+    {
+      "name": "JavaScript",
+      "logo": "https://img.icons8.com/color/48/000000/javascript.png"
+    },
+    {
+      "name": "TypeScript",
+      "logo": "https://img.icons8.com/color/48/000000/typescript.png"
+    },
+    {
+      "name": "Svelte",
+      "logo": "https://img.icons8.com/doodle/48/000000/svetle.png"
+    },
+    {
+      "name": "React",
+      "logo": "https://img.icons8.com/color/48/000000/react-native.png"
+    },
+    {
+      "name": "Node",
+      "logo": "https://img.icons8.com/color/48/000000/nodejs.png"
+    },
+    {
+      "name": "Express",
+      "logo": "https://img.icons8.com/color/48/000000/express.png"
+    },
+    {
+      "name": "MongoDB",
+      "logo": "https://img.icons8.com/color/48/000000/mongodb.png"
+    },
+    {
+      "name": "Redux",
+      "logo": "https://img.icons8.com/color/48/000000/redux.png"
+    },
+    {
+      "name": "Next",
+      "logo": "https://img.icons8.com/color/48/000000/nextjs.png"
+    },
+    {
+      "name": "Firebase",
+      "logo": "https://img.icons8.com/color/48/000000/firebase.png"
+    },
+
+    {
+      "name": "Python",
+      "logo": "https://img.icons8.com/color/48/000000/python.png"
+    },
+    {
+      "name": "Flask",
+      "logo": "https://img.icons8.com/color/48/000000/flask.png"
+    },
+    {
+      "name": "Android",
+      "logo": "https://img.icons8.com/color/48/000000/android-os.png"
+    },
+    {
+      "name": "Flutter",
+      "logo": "https://img.icons8.com/color/48/000000/flutter.png"
+    },
+    {
+      "name": "ElasticSearch",
+      "logo": "https://img.icons8.com/color/48/000000/elasticsearch.png"
+    },
+    {
+      "name": "Git",
+      "logo": "https://img.icons8.com/color/48/000000/git.png"
+    },
+    {
+      "name": "Docker",
+      "logo": "https://img.icons8.com/color/48/000000/docker.png"
+    },
+    {
+      "name": "Kubernetes",
+      "logo": "https://img.icons8.com/color/48/000000/kubernetes.png"
+    },
+    {
+      "name": "VS Code",
+      "logo": "https://img.icons8.com/color/48/000000/visual-studio-code-2019.png"
+    },
+    {
+      "name": "Google Cloud",
+      "logo": "https://img.icons8.com/color/48/000000/google-cloud.png"
+    },
+    {
+      "name": "AWS",
+      "logo": "https://img.icons8.com/color/48/000000/amazon-web-services.png"
+    },
+    {
+      "name": "Postman",
+      "logo": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png"
+    },
+    {
+      "name": "Figma",
+      "logo": "https://img.icons8.com/color/48/000000/figma--v1.png"
+    },
+    {
+      "name": "Adobe XD",
+      "logo": "https://img.icons8.com/color/48/000000/adobe-xd--v1.png"
+    }
+  ]
+}

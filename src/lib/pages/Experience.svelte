@@ -1,81 +1,41 @@
 <script>
+  import data from '../data/experience.json'
 </script>
 
 <h2 class="title">Experience</h2>
 <section id="timeline" class="container">
-  <div class="timeline-block">
-    <div class="timeline-img picture" />
+  {#each data as exp}
+    <div class="timeline-block">
+      <div class="timeline-img picture" />
 
-    <div class="timeline-content">
-      <h2>IEMLabs</h2>
-      <div class="timeline-content-info">
-        <span class="timeline-content-info-title">
-          <i class="fa fa-certificate" aria-hidden="true" />
-          Software Developer Intern
-        </span>
-        <span class="timeline-content-info-date">
-          <i class="fa fa-calendar-o" aria-hidden="true" />
-          October 2021 - July 2022
-        </span>
+      <div class="timeline-content">
+        <h2>{exp.company}</h2>
+        <div class="timeline-content-info">
+          <span class="timeline-content-info-title">
+            <i class="fa fa-certificate" aria-hidden="true" />
+            {exp.position}
+          </span>
+          <span class="timeline-content-info-date">
+            <i class="fa fa-calendar-o" aria-hidden="true" />
+            {exp.duration}
+          </span>
+        </div>
+        <p>
+          {#each exp.description as desc}
+            • {desc}
+            <br />
+          {/each}
+        </p>
+        <ul class="content-skills">
+          {#if exp.skills}
+            {#each exp.skills as skill}
+              <li>{skill}</li>
+            {/each}
+          {/if}
+        </ul>
       </div>
-      <p>
-        • Implemented threading for IEM-Secure to reduce scan time.<br /> •
-        Revamped CI/CD pipeline for web-app deployment using AWS.<br />
-      </p>
-      <ul class="content-skills">
-        <li>MERN</li>
-        <li>UI/UX</li>
-        <li>Fast API</li>
-        <li>Machine Learning</li>
-      </ul>
     </div>
-  </div>
-
-  <div class="timeline-block">
-    <div class="timeline-img picture" />
-
-    <div class="timeline-content">
-      <h2>Tech Lead</h2>
-      <div class="timeline-content-info">
-        <span class="timeline-content-info-title">
-          <i class="fa fa-certificate" aria-hidden="true" />
-          Google Developer Student Clubs CIEM
-        </span>
-        <span class="timeline-content-info-date">
-          <i class="fa fa-calendar-o" aria-hidden="true" />
-          September 2021 - July 2022
-        </span>
-      </div>
-      <p>
-        • Led a team of 10+ developers to build a web-app for the club.<br /> •
-        Implemented a CI/CD pipeline for the web-app using AWS.<br /> • Conducted
-        workshops on web development and open-source.
-      </p>
-    </div>
-  </div>
-
-  <div class="timeline-block">
-    <div class="timeline-img picture" />
-
-    <div class="timeline-content">
-      <h2>Program Administrator</h2>
-      <div class="timeline-content-info">
-        <span class="timeline-content-info-title">
-          <i class="fa fa-certificate" aria-hidden="true" />
-          Girl Script Summer of Code
-        </span>
-        <span class="timeline-content-info-date">
-          <i class="fa fa-calendar-o" aria-hidden="true" />
-          September 2021 - July 2022
-        </span>
-      </div>
-      <p>
-        • Mentored 20+ students in the program<br />• Maintained various
-        open-source projects<br /> • Conducted workshops on web development and
-        open-source<br /> • Organized events to promote open-source.
-      </p>
-    </div>
-  </div>
+  {/each}
 </section>
 
 <style>
@@ -93,7 +53,7 @@
   }
 
   .container::after {
-    content: "";
+    content: '';
     display: table;
     clear: both;
   }
@@ -105,7 +65,7 @@
   }
 
   #timeline::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 25px;
@@ -131,7 +91,7 @@
   }
 
   .timeline-block:after {
-    content: "";
+    content: '';
     display: table;
     clear: both;
   }
@@ -233,7 +193,7 @@
   }
 
   .timeline-content:after {
-    content: "";
+    content: '';
     display: table;
     clear: both;
   }
@@ -256,7 +216,7 @@
   }
 
   .timeline-content::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 16px;
     right: 100%;

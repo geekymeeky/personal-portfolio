@@ -1,30 +1,42 @@
 [
-    {
-        "name": "Mausam",
-        "description": ["A weather app that can", "fetch weather based on the current location or city you specify."],
-        "domain": "Cross Platform",
-        "link": "https://github.com/geekymeeky/Mausam",
-        "image": "./mausam.webp"
-    },
-    {
-        "name": "E-Bureau",
-        "description": ["E-Bureau is an online", "Crime managment System which aims to helps in reducing and managing crime."],
-        "domain": "Web Application",
-        "link": "https://github.com/hackatooons/e-bureau",
-        "image": "./green.webp"
-    },
-    {
-        "name": "DataMed",
-        "description": ["DataMed predicts", "severity of Disease using Machine Learning"],
-        "domain": "Web Application",
-        "link": "https://github.com/geekymeeky/DataMed",
-        "image": "./red.webp"
-    },
-    {
-        "name": "Book Finder",
-        "description": ["Book Finder is a web application", "that helps in finding books based on the search criteria."],
-        "domain": "Web Application",
-        "link": "https://github.com/geekymeeky/Book-finder",
-        "image": "./blue.webp"
-    }
+  {
+    "name": "Mausam",
+    "description": [
+      "A weather app that can",
+      "fetch weather based on the current location or city you specify."
+    ],
+    "domain": "Cross Platform",
+    "link": "https://github.com/geekymeeky/Mausam",
+    "image": "./mausam.webp"
+  },
+  {
+    "name": "E-Bureau",
+    "description": [
+      "E-Bureau is an online",
+      "Crime managment System which aims to helps in reducing and managing crime."
+    ],
+    "domain": "Web Application",
+    "link": "https://github.com/hackatooons/e-bureau",
+    "image": "./green.webp"
+  },
+  {
+    "name": "DataMed",
+    "description": [
+      "DataMed predicts",
+      "severity of Disease using Machine Learning"
+    ],
+    "domain": "Web Application",
+    "link": "https://github.com/geekymeeky/DataMed",
+    "image": "./red.webp"
+  },
+  {
+    "name": "Book Finder",
+    "description": [
+      "Book Finder is a web application",
+      "that helps in finding books based on the search criteria."
+    ],
+    "domain": "Web Application",
+    "link": "https://github.com/geekymeeky/Book-finder",
+    "image": "./blue.webp"
+  }
 ]

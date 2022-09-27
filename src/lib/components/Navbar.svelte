@@ -1,47 +1,47 @@
 <script>
-  import { Link } from "svelte-routing";
-  import Icon from "@iconify/svelte";
-  let checked = true;
-  let menu = false;
+  import { Link } from 'svelte-routing'
+  import Icon from '@iconify/svelte'
+  let checked = true
+  let menu = false
 
   let routes = [
     {
-      name: "Home",
-      path: "/",
+      name: 'Home',
+      path: '/',
     },
     {
-      name: "About",
-      path: "/about",
+      name: 'About',
+      path: '/about',
     },
     {
-      name: "Experience",
-      path: "/experience",
+      name: 'Experience',
+      path: '/experience',
     },
-  ];
+  ]
 
   //determines if the user has a set theme
   function detectColorScheme() {
-    var theme = "light"; //default to light
+    var theme = 'light' //default to light
 
     //local storage is used to override OS theme settings
-    if (localStorage.getItem("theme")) {
-      if (localStorage.getItem("theme") == "dark") {
-        var theme = "dark";
+    if (localStorage.getItem('theme')) {
+      if (localStorage.getItem('theme') == 'dark') {
+        var theme = 'dark'
       }
     } else if (!window.matchMedia) {
       //matchMedia method not supported
-      return false;
-    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      return false
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       //OS theme setting detected as dark
-      var theme = "dark";
+      var theme = 'dark'
     }
 
     //dark theme preferred, set document with a `data-theme` attribute
-    if (theme == "dark") {
-      document.documentElement.setAttribute("data-theme", "dark");
+    if (theme == 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark')
     }
   }
-  detectColorScheme();
+  detectColorScheme()
 </script>
 
 <nav id="navbar" class="navbar">
@@ -55,11 +55,11 @@
     bind:checked
     on:change={() => {
       if (checked) {
-        document.documentElement.setAttribute("data-theme", "dark");
-        localStorage.setItem("theme", "dark");
+        document.documentElement.setAttribute('data-theme', 'dark')
+        localStorage.setItem('theme', 'dark')
       } else {
-        document.documentElement.setAttribute("data-theme", "light");
-        localStorage.setItem("theme", "light");
+        document.documentElement.setAttribute('data-theme', 'light')
+        localStorage.setItem('theme', 'light')
       }
     }}
   />
@@ -71,7 +71,7 @@
   <div class="nav-menu__wrapper">
     <div role="button" on:click={() => (menu = !menu)} class="navbar-burger">
       <Icon
-        icon={menu ? "ci:close-big" : "ci:menu-alt-01"}
+        icon={menu ? 'ci:close-big' : 'ci:menu-alt-01'}
         style="width: 2.5rem; height: 2.5rem;"
         class="nav-menu"
       />
@@ -79,7 +79,7 @@
     <ul class="nav-menu" id="nav-menu" class:active={menu}>
       {#each routes as navItem}
         <li class="nav-item">
-          {#if navItem.path.startsWith("#")}
+          {#if navItem.path.startsWith('#')}
             <a href={navItem.path} class="nav-link">{navItem.name}</a>
           {:else}
             <Link to={navItem.path} class="nav-link">{navItem.name}</Link>

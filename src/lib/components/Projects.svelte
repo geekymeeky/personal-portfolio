@@ -1,6 +1,6 @@
 <script>
-  import data from "../../assets/projects.json";
-  import Icon from "@iconify/svelte";
+  import data from '../../assets/projects.json'
+  import Icon from '@iconify/svelte'
 </script>
 
 <section class="container projects" id="Work">

@@ -1,0 +1,33 @@
+[
+  {
+    "company": "IEMLabs",
+    "position": "Software Developer Intern",
+    "duration": "October 2021 - July 2022",
+    "description": [
+      "Implemented threading for IEM-Secure to reduce scan time.",
+      "Revamped CI/CD pipeline for web-app deployment using AWS."
+    ],
+    "skills": ["MERN", "UI/UX", "Fast API", "Machine Learning"]
+  },
+  {
+    "company": "Google Developer Student Clubs CIEM",
+    "position": "Tech Lead",
+    "duration": "September 2021 - July 2022",
+    "description": [
+      "Led a team of 10+ developers to build a web-app for the club.",
+      "Implemented a CI/CD pipeline for the web-app using AWS.",
+      "Conducted workshops on web development and open-source."
+    ]
+  },
+  {
+    "company": "DevIncept Contribution Program",
+    "position": "Program Administrator",
+    "duration": "September 2021 - July 2022",
+    "description": [
+      "Mentored 20+ students in the program",
+      "Maintained various open-source projects",
+      "Conducted workshops on web development and open-source",
+      "Organized events to promote open-source."
+    ]
+  }
+]

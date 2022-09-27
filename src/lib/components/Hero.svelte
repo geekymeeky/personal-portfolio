@@ -2,8 +2,8 @@
   const scroll = () =>
     window.scrollTo({
       top: window.innerHeight,
-      behavior: "smooth",
-    });
+      behavior: 'smooth',
+    })
 </script>
 
 <section class="hero">
@@ -77,7 +77,7 @@
       padding-right: 0;
     }
   }
-  :global([data-theme="light"]) .hero__svg {
+  :global([data-theme='light']) .hero__svg {
     filter: invert(0);
   }
 </style>
