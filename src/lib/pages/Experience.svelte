@@ -111,7 +111,7 @@
     left: 25px;
     height: 100%;
     width: 4px;
-    background: var(--color-neutral-2);
+    background: #c1c1c1;
   }
 
   @media only screen and (min-width: 1170px) {
@@ -185,14 +185,15 @@
     position: relative;
     margin-left: 60px;
     margin-right: 30px;
-    background: #333c42;
+    /* background: #333c42; */
+    border: 1px solid #7e57c2;
     border-radius: 2px;
     padding: 1em;
   }
   .timeline-content .timeline-content-info {
-    background: #2b343a;
+    background: #2b343a60;
     padding: 5px 10px;
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--color-neutral-1);
     font-size: 12px;
     box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.08);
     border-radius: 2px;
@@ -221,11 +222,11 @@
     justify-content: center;
   }
   .timeline-content .content-skills li {
-    background: #40484d;
+    background: #2b343a60;
     border-radius: 2px;
     display: inline-block;
     padding: 2px 10px;
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--color-neutral-1);
     margin: 3px 2px;
     text-align: center;
     flex-grow: 1;
@@ -238,20 +239,15 @@
   }
 
   .timeline-content h2 {
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--color-neutral-1);
     margin-top: 0;
     margin-bottom: 5px;
   }
 
-  .timeline-content p,
-  .timeline-content .date {
-    color: rgba(255, 255, 255, 0.7);
+  .timeline-content p {
+    color: var(--color-neutral-1);
     font-size: 13px;
     font-size: 0.8125rem;
-  }
-
-  .timeline-content .date {
-    display: inline-block;
   }
 
   .timeline-content p {
@@ -267,7 +263,7 @@
     height: 0;
     width: 0;
     border: 7px solid transparent;
-    border-right: 7px solid #333c42;
+    border-right: 7px solid #7e57c2;
   }
 
   @media only screen and (min-width: 768px) {
@@ -283,7 +279,7 @@
   }
   @media only screen and (min-width: 1170px) {
     .timeline-content {
-      color: white;
+      color: var(--color-neutral-1);
       margin-left: 0;
       padding: 1.6em;
       width: 36%;
@@ -294,16 +290,7 @@
       top: 24px;
       left: 100%;
       border-color: transparent;
-      border-left-color: #333c42;
-    }
-
-    .timeline-content .date {
-      position: absolute;
-      width: 100%;
-      left: 122%;
-      top: 6px;
-      font-size: 16px;
-      font-size: 1rem;
+      border-left-color: #7e57c2;
     }
 
     .timeline-block:nth-child(even) .timeline-content {
@@ -315,12 +302,7 @@
       left: auto;
       right: 100%;
       border-color: transparent;
-      border-right-color: #333c42;
-    }
-    .timeline-block:nth-child(even) .timeline-content .date {
-      left: auto;
-      right: 122%;
-      text-align: right;
+      border-right-color: #7e57c2;
     }
   }
 </style>
