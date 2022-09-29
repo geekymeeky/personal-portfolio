@@ -1,5 +1,5 @@
 <script>
-  import data from '../data/experience.json'
+  import data from '../../assets/data/experience.json'
 </script>
 
 <h2 class="title">Experience</h2>
