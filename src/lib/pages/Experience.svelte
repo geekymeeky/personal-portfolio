@@ -1,10 +1,10 @@
 <script>
-  import data from '../../assets/data/experience.json'
+  import expData from '../../assets/data/experience.json'
 </script>
 
 <h2 class="title">Experience</h2>
 <section id="timeline" class="container">
-  {#each data as exp}
+  {#each expData as exp}
     <div class="timeline-block">
       <div class="timeline-img picture" />
 

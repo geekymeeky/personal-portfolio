@@ -1,5 +1,5 @@
 <script>
-  import data from '../../assets/about.json'
+  import aboutData from '../../assets/about.json'
 </script>
 
 <section>
@@ -11,7 +11,7 @@
     />
     <h2>About <span>Me</span></h2>
     <p class="about-text">
-      {data.about}
+      {aboutData.about}
     </p>
   </div>
   <div class="container">
@@ -22,7 +22,7 @@
       smartphones, tablets, and desktops.
     </p>
     <div class="grid">
-      {#each data.technologies as tech}
+      {#each aboutData.technologies as tech}
         <div class="grid-item">
           <img
             src={tech.logo}

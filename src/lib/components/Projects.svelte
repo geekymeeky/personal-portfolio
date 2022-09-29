@@ -1,5 +1,5 @@
 <script>
-  import data from '../../assets/projects.json'
+  import projData from '../../assets/projects.json'
   import Icon from '@iconify/svelte'
 </script>
 
@@ -8,7 +8,7 @@
     Featured <span>Projects</span>
   </h2>
   <div class="projects_list">
-    {#each data as project}
+    {#each projData as project}
       <div class="project">
         <div class="project__content">
           <h5 class="project__title"><span>{project.name}</span></h5>
