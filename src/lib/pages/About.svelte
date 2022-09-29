@@ -1,5 +1,5 @@
 <script>
-  import data from '../../assets/data/About.json'
+  import data from '../../assets/about.json'
 </script>
 
 <section>
