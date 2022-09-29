@@ -1,5 +1,5 @@
 <script>
-  import expData from '../../assets/data/experience.json'
+  import expData from '../../assets/experience.json'
 </script>
 
 <h2 class="title">Experience</h2>
