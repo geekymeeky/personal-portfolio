@@ -1,6 +1,35 @@
 <script>
   import expData from '../../assets/experience.json'
+  import { MetaTags } from 'svelte-meta-tags'
 </script>
+
+<MetaTags
+  title="Experience - Srijan Gupta"
+  description=""
+  openGraph={{
+    title: 'Experience - Srijan Gupta',
+    description: '',
+    url: 'https://srijankgupta.vercel.app/',
+    type: 'website',
+    images: [
+      {
+        url: 'https://github.com/geekymeeky.png',
+        width: 800,
+        height: 600,
+        alt: 'Srijan K. Gupta | @geekymeeky',
+      },
+    ],
+  }}
+  twitter={{
+    handle: '@srijankrgupta',
+    site: '@srijankrgupta',
+    cardType: 'summary_large_image',
+    title: 'Experience - Srijan Gupta',
+    description: '',
+    image: 'https://github.com/geekymeeky.png',
+    imageAlt: 'Experience - Srijan Gupta',
+  }}
+/>
 
 <h2 class="title">Experience</h2>
 <section id="timeline" class="container">
