@@ -1,5 +1,15 @@
 [
   {
+    "company": " Updot solutions LLP",
+    "position": "Web Development Intern",
+    "duration": "October 2022 - Present",
+    "description": [
+      "Developed a website for a client using HTML, CSS, and JavaScript.",
+      "Worked on the front-end of the website using React.js and Bootstrap."
+    ],
+    "skills": ["HTML", "CSS", "JavaScript", "React"]
+  },
+  {
     "company": "IEMLabs",
     "position": "Software Developer Intern",
     "duration": "October 2021 - July 2022",
