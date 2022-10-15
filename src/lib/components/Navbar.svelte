@@ -106,7 +106,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 6.875rem;
-    z-index: 9;
+    z-index: 2;
     backdrop-filter: blur(10px);
     transition: all 0.5s ease;
   }

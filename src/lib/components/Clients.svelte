@@ -37,6 +37,7 @@
     -webkit-filter: grayscale(100%);
     transition: filter 0.3s ease-in-out;
     transition: -webkit-filter 0.3s ease-in-out;
+    z-index: 4;
   }
   .client_logos > img:hover {
     filter: grayscale(0);
