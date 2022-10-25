@@ -29,10 +29,10 @@
 
 html {
   scroll-behavior: smooth;
-  cursor: none;
+  /* cursor: none; */
 }
 
-.cursor {
+/* .cursor {
   position: fixed;
   top: 0;
   left: 0;
@@ -64,7 +64,7 @@ html {
   .cursor {
     display: none;
   }
-}
+} */
 
 @media (prefers-color-scheme: light) {
   :root {

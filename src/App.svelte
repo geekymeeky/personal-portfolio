@@ -7,14 +7,14 @@
   import Home from './lib/pages/Home.svelte'
   export let url = ''
 
-  const cursor = document.createElement('div')
-  cursor.classList.add('cursor')
-  document.body.appendChild(cursor)
+  // const cursor = document.createElement('div')
+  // cursor.classList.add('cursor')
+  // document.body.appendChild(cursor)
 
-  document.addEventListener('mousemove', (e) => {
-    cursor.style.left = e.clientX + 'px'
-    cursor.style.top = e.clientY + 'px'
-  })
+  // document.addEventListener('mousemove', (e) => {
+  //   cursor.style.left = e.clientX + 'px'
+  //   cursor.style.top = e.clientY + 'px'
+  // })
 </script>
 
 <Router {url}>
@@ -22,8 +22,9 @@
   <main>
     <Route path="about" component={About} />
     <Route path="experience" component={Experience} />
-    <Route path="/" component={Home} />
   </main>
+  <Route path="/" component={Home} />
+
   <Footer />
 </Router>
 

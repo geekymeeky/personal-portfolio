@@ -1,12 +1,29 @@
 <script>
+  import { onMount } from 'svelte'
+
   const scroll = () =>
     window.scrollTo({
       top: window.innerHeight,
       behavior: 'smooth',
     })
+  onMount(() => {
+    VANTA.HALO({
+      el: '#hero',
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.0,
+      minWidth: 200.0,
+      amplitudeFactor: 1.3,
+      xOffset: 0.1,
+      yOffset: 0.1,
+      size: 0.9,
+      backgroundColor: 0x010206,
+    })
+  })
 </script>
 
-<section class="hero">
+<section class="hero" id="hero">
   <h1 class="hero__title">
     I’m a developer specialising in <span>Web</span> and <span>Android</span> app
     development
@@ -52,6 +69,7 @@
   .hero {
     display: flex;
     height: 100vh;
+    width: 100vw;
     justify-content: center;
     align-items: center;
     position: relative;
