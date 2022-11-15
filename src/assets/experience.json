@@ -1,5 +1,15 @@
 [
   {
+    "company": "Prepfully",
+    "position": "Software Engineering Intern",
+    "duration": "November 2022 - Present",
+    "description": [
+      "Worked on the front-end of the website using Next.js and Tailwind CSS",
+      "Fetch data from Prismic CMS and display it on the website"
+    ],
+    "skills": ["Next.js", "TailwindCSS", "Prismic", "PostgreSQL"]
+  },
+  {
     "company": " Updot solutions LLP",
     "position": "Web Development Intern",
     "duration": "October 2022 - Present",
