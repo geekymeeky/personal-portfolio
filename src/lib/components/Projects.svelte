@@ -79,8 +79,7 @@
     padding: 1rem 2rem;
     border-radius: 5rem;
     background: none;
-    border: 1px solid;
-    border-color: var(--color-neutral-1);
+    border: 2px solid;
     width: 189px;
     color: var(--color-neutral-1);
     font-size: 16px;
@@ -89,6 +88,7 @@
     letter-spacing: 0.04em;
     text-align: left;
     text-decoration: none;
+    font-weight: 600;
   }
   .project__link:hover {
     background: var(--color-primary);
@@ -120,5 +120,14 @@
     .project:nth-child(even) {
       flex-direction: column;
     }
+  }
+  h2 > span {
+    color: #939aff;
+  }
+  h3 > span {
+    color: #939aff;
+  }
+  h5 > span {
+    color: #939aff;
   }
 </style>

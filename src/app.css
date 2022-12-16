@@ -98,7 +98,7 @@ html {
     #010101 100%
   );
   --color-neutral-1: #e3e4e6;
-  --color-neutral-2: #e3e4e68c;
+  --color-neutral-2: #fff;
   background: var(--color-bg);
   transition: background-color 0.5s ease;
 }
@@ -167,7 +167,7 @@ h1 > span {
 h2 {
   font-family: 'Work Sans';
   font-style: normal;
-  font-weight: 300;
+  font-weight: 600;
   font-size: 40px;
   line-height: 150%;
   letter-spacing: -0.02em;

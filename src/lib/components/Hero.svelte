@@ -1,32 +1,15 @@
 <script>
-  import { onMount } from 'svelte'
-
   const scroll = () =>
     window.scrollTo({
       top: window.innerHeight,
       behavior: 'smooth',
     })
-  onMount(() => {
-    VANTA.HALO({
-      el: '#hero',
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.0,
-      minWidth: 200.0,
-      amplitudeFactor: 1.3,
-      xOffset: 0.1,
-      yOffset: 0.1,
-      size: 0.9,
-      backgroundColor: 0x010206,
-    })
-  })
 </script>
 
 <section class="hero" id="hero">
   <h1 class="hero__title">
-    I’m a developer specialising in <span>Web</span> and <span>Android</span> app
-    development
+    I’m a developer specialising in <span style="color: #1D9BF0;">Web</span> and
+    <span style="color: #7ee787;">Android</span> app development
   </h1>
   <div class="hero__svg" on:click={scroll}>
     <svg

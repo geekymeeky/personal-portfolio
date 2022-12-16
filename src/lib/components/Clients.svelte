@@ -51,4 +51,7 @@
       gap: 1rem;
     }
   }
+  span {
+    color: #ffa28b;
+  }
 </style>
