@@ -2,9 +2,10 @@
 
 :root {
   font-family: 'Work Sans', sans-serif;
+  font-size: clamp(15px, 1vw, 20px);
   /* css vriables*/
   --color-primary: linear-gradient(99.05deg, #bc3cd8 0.07%, #c54b8c 106.32%);
-  --color-bg: linear-gradient(
+  /* --color-bg: linear-gradient(
     180deg,
     #010208 16.39%,
     #010206 20.51%,
@@ -13,7 +14,8 @@
     #010101 34.11%,
     #010101 36.21%,
     #010101 100%
-  );
+  ); */
+  --color-bg: #000;
   --color-neutral-1: #e3e4e6;
   --color-neutral-2: #e3e4e68c;
 
@@ -87,7 +89,7 @@ html {
 
 [data-theme='dark'] {
   --color-primary: linear-gradient(99.05deg, #bc3cd8 0.07%, #c54b8c 106.32%);
-  --color-bg: linear-gradient(
+  /* --color-bg: linear-gradient(
     180deg,
     #010208 16.39%,
     #010206 20.51%,
@@ -96,7 +98,8 @@ html {
     #010101 34.11%,
     #010101 36.21%,
     #010101 100%
-  );
+  ); */
+  --color-bg: #000;
   --color-neutral-1: #e3e4e6;
   --color-neutral-2: #fff;
   background: var(--color-bg);
@@ -121,18 +124,6 @@ html {
   transition: background-color 0.5s ease;
 }
 
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(0.5rem);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -147,75 +138,97 @@ body::-webkit-scrollbar {
 h1 {
   font-family: 'Work Sans';
   font-style: normal;
-  font-weight: 300;
-  font-size: 56px;
+  font-weight: 700;
+  font-size: clamp(36px, 10vw, 72px);
   line-height: 150%;
   letter-spacing: -0.02em;
   color: var(--color-neutral-2);
-}
-
-h1 > span {
-  font-family: 'Work Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 56px;
-  line-height: 150%;
-  letter-spacing: -0.02em;
-  color: var(--color-neutral-1);
 }
 
 h2 {
   font-family: 'Work Sans';
   font-style: normal;
   font-weight: 600;
-  font-size: 40px;
+  font-size: clamp(28px, 10vw, 56px);
   line-height: 150%;
   letter-spacing: -0.02em;
   color: var(--color-neutral-2);
-}
-
-h2 > span {
-  font-family: 'Work Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 150%;
-  letter-spacing: -0.02em;
-  color: var(--color-neutral-1);
 }
 
 h3 {
-  font-size: 32px;
-  font-weight: 300;
+  font-size: clamp(20px, 10vw, 40px);
+  font-weight: 500;
   line-height: 48px;
   letter-spacing: 0em;
   text-align: left;
   color: var(--color-neutral-2);
-}
-
-h3 > span {
-  font-size: 32px;
-  font-weight: 600;
-  line-height: 48px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: var(--color-neutral-1);
 }
 
 h5 {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: clamp(12px, 10vw, 24px);
+  font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.04em;
   color: var(--color-neutral-2);
 }
 
-h5 > span {
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 24px;
-  letter-spacing: 0.04em;
-  color: var(--color-neutral-1);
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes animate {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 500px 0;
+  }
+}
+
+@-moz-keyframes animate {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 500px 0;
+  }
+}
+
+@-ms-keyframes animate {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 500px 0;
+  }
+}
+
+@-o-keyframes animate {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 500px 0;
+  }
+}
+
+@keyframes animate {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 500px 0;
+  }
 }
 
 .container {

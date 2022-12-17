@@ -57,6 +57,49 @@
     align-items: center;
     position: relative;
   }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    display: block;
+    background: #000
+      url('https://user-images.githubusercontent.com/66238394/208248004-a5406bac-9b78-40df-8317-242a88954d9a.jpg')
+      repeat 0 0;
+    -webkit-animation: 25s linear 0s normal none infinite animate;
+    -moz-animation: 25s linear 0s normal none infinite animate;
+    -ms-animation: 25s linear 0s normal none infinite animate;
+    -o-animation: 25s linear 0s normal none infinite animate;
+    animation: 25s linear 0s normal none infinite animate;
+    width: 100vw;
+    height: 100vh;
+
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+  }
+
+  :global([data-theme='dark']) .hero::before {
+    background: #000
+      url('https://user-images.githubusercontent.com/66238394/208248004-a5406bac-9b78-40df-8317-242a88954d9a.jpg')
+      repeat 0 0;
+  }
+  :global([data-theme='light']) .hero::before {
+    background: #fff
+      url('https://user-images.githubusercontent.com/66238394/208248004-a5406bac-9b78-40df-8317-242a88954d9a.jpg')
+      repeat 0 0;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px) invert(1);
+  }
+
   .hero__title {
     text-align: center;
     padding-left: 6.5rem;
