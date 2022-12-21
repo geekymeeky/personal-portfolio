@@ -1,6 +1,4 @@
 var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-var tawkToPropertyId = process.env.TAWKTO_PROPERTY_ID;
-var tawkToWidgetId = process.env.TAWKTO_WIDGET_ID;
 (function () {
     var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
     s1.async = true;
