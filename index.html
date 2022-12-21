@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="Cache-Control" content="public, max-age=604800, immutable" />
+  
   <link rel="icon" type="image/webp" href="/icon.webp" />
   <meta name="google-site-verification" content="HMUwNOlNIBu6NokpGHPBFFdfeo2EUH7FN1rJyzK3jy8" />
   <meta name="msvalidate.01" content="08D9C2DEBD4F8E65BBFC3C7C32499106" />
@@ -33,7 +35,10 @@
   <div id="app"></div>
   <script type="module" src="/src/main.js"></script>
   <!--Tawk.to Script-->
-  <script type="text/javascript" src="/src/assets/js/tawkto.js"></script>
+  <script type="module">
+    import initTawkTo from './src/assets/js/tawkto.js';
+    initTawkTo();
+  </script>
 </body>
 
 </html>
