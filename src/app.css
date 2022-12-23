@@ -18,6 +18,7 @@
   --color-bg: #000;
   --color-neutral-1: #e3e4e6;
   --color-neutral-2: #e3e4e68c;
+  --color-bg-secondary: #121212;
 
   color-scheme: light dark;
   background: var(--color-bg);
@@ -83,6 +84,16 @@ html {
       #ffffff 100%
     );
     color: #000;
+    --color-bg-secondary: linear-gradient(
+      180deg,
+      #ffffff 16.39%,
+      #ffffff 20.51%,
+      #ffffff 24.79%,
+      #ffffff 30.46%,
+      #ffffff 34.11%,
+      #ffffff 36.21%,
+      #ffffff 100%
+    );
     background-color: var(--color-bg);
   }
 }
@@ -103,6 +114,7 @@ html {
   --color-neutral-1: #e3e4e6;
   --color-neutral-2: #fff;
   background: var(--color-bg);
+  --color-bg-secondary: #121212;
   transition: background-color 0.5s ease;
 }
 
@@ -120,6 +132,16 @@ html {
     #ffffff 100%
   );
   color: #000;
+  --color-bg-secondary: linear-gradient(
+    180deg,
+    #ffffff 16.39%,
+    #ffffff 20.51%,
+    #ffffff 24.79%,
+    #ffffff 30.46%,
+    #ffffff 34.11%,
+    #ffffff 36.21%,
+    #ffffff 100%
+  );
   background-color: var(--color-bg);
   transition: background-color 0.5s ease;
 }

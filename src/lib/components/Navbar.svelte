@@ -17,6 +17,10 @@
       name: 'Experience',
       path: '/experience',
     },
+    {
+      name: 'Blog',
+      path: '/blog',
+    },
   ]
 
   //determines if the user has a set theme

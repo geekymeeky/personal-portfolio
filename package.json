@@ -17,6 +17,8 @@
     "vite": "^3.0.7"
   },
   "dependencies": {
+    "@prismicio/client": "^6.7.3",
+    "@prismicio/helpers": "^2.3.8",
     "svelte-routing": "^1.6.0"
   }
 }

@@ -4,6 +4,7 @@
   import Navbar from './lib/components/Navbar.svelte'
   import About from './lib/pages/About.svelte'
   import Experience from './lib/pages/Experience.svelte'
+  import Blog from './lib/pages/Blog.svelte'
   import Home from './lib/pages/Home.svelte'
   export let url = ''
 
@@ -22,6 +23,7 @@
   <main>
     <Route path="about" component={About} />
     <Route path="experience" component={Experience} />
+    <Route path="blog" component={Blog} />
   </main>
   <Route path="/" component={Home} />
 
