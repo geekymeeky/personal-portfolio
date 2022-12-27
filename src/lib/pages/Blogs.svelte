@@ -1,6 +1,7 @@
 <script>
   import { onMount } from 'svelte'
   import { getAllPosts } from '../api/posts'
+  import { navigate } from 'svelte-routing'
 
   const pattern = [
     'horizontal',
@@ -33,7 +34,12 @@
     {#if posts !== null}
       <!-- content here -->
       {#each posts as post, idx}
-        <article class={`${getPattern(idx)} card`}>
+        <article
+          class={`${getPattern(idx)} card`}
+          on:click={() => {
+            navigate(`/blog/${post?.uid}`)
+          }}
+        >
           <img
             class="card__img"
             src={post?.data?.featured_image?.url}

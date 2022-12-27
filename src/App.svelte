@@ -4,8 +4,9 @@
   import Navbar from './lib/components/Navbar.svelte'
   import About from './lib/pages/About.svelte'
   import Experience from './lib/pages/Experience.svelte'
-  import Blog from './lib/pages/Blog.svelte'
+  import Blogs from './lib/pages/Blogs.svelte'
   import Home from './lib/pages/Home.svelte'
+  import BlogPost from './lib/pages/BlogPost.svelte'
   export let url = ''
 
   // const cursor = document.createElement('div')
@@ -23,7 +24,10 @@
   <main>
     <Route path="about" component={About} />
     <Route path="experience" component={Experience} />
-    <Route path="blog" component={Blog} />
+    <Route path="blog" component={Blogs} />
+    <Route path="blog/:slug" let:params>
+      <BlogPost slug={params.slug} />
+    </Route>
   </main>
   <Route path="/" component={Home} />
 
