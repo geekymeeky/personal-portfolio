@@ -89,9 +89,9 @@
 
   .card {
     display: flex;
-    border: 1px solid #121212;
+    border: 1px solid var(--color-neutral-1);
     transition: all 0.25s ease;
-    background: var(--color-bg-secondary);
+    background: var(--color-bg);
     border-radius: 0.5rem;
   }
 
@@ -195,22 +195,28 @@
   @media (max-width: 768px) {
     section.cards {
       grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(24, 1fr);
     }
-
     .vertical {
-      grid-row: span 4;
+      grid-row: span 1;
       grid-column: span 1;
     }
-
     .horizontal {
-      grid-row: span 2;
+      grid-row: span 1;
       grid-column: span 1;
     }
-
     .reverse-horizontal {
-      grid-row: span 2;
+      grid-row: span 1;
       grid-column: span 1;
+    }
+    .card {
+      flex-direction: column;
+    }
+    .card__img {
+      width: 100%;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 1.5rem));
+    }
+    .card__content {
+      padding: 1rem;
     }
   }
   .card__tags {

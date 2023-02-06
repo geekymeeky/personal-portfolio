@@ -84,20 +84,24 @@
     filter: blur(2px);
   }
 
-  :global([data-theme='dark']) .hero::before {
-    background: #000
-      url('https://user-images.githubusercontent.com/66238394/208248004-a5406bac-9b78-40df-8317-242a88954d9a.jpg')
-      repeat 0 0;
+  @media (prefers-color-scheme: dark) {
+    .hero::before {
+      background: #000
+        url('https://user-images.githubusercontent.com/66238394/208248004-a5406bac-9b78-40df-8317-242a88954d9a.jpg')
+        repeat 0 0;
+    }
   }
-  :global([data-theme='light']) .hero::before {
-    background: #fff
-      url('https://user-images.githubusercontent.com/66238394/208248004-a5406bac-9b78-40df-8317-242a88954d9a.jpg')
-      repeat 0 0;
-    -webkit-filter: blur(2px);
-    -moz-filter: blur(2px);
-    -o-filter: blur(2px);
-    -ms-filter: blur(2px);
-    filter: blur(2px) invert(1);
+  @media (prefers-color-scheme: light) {
+    .hero::before {
+      background: #fff
+        url('https://user-images.githubusercontent.com/66238394/208248004-a5406bac-9b78-40df-8317-242a88954d9a.jpg')
+        repeat 0 0;
+      -webkit-filter: blur(2px);
+      -moz-filter: blur(2px);
+      -o-filter: blur(2px);
+      -ms-filter: blur(2px);
+      filter: blur(2px) invert(1);
+    }
   }
 
   .hero__title {
