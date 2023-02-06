@@ -83,7 +83,6 @@
     display: grid;
     grid-auto-flow: row dense;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(12, 1fr);
     grid-gap: 1rem;
   }
 
