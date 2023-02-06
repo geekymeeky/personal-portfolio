@@ -1,37 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600&display=swap');
 
-:root {
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: linear-gradient(99.05deg, #bc3cd8 0.07%, #c54b8c 106.32%);
+    --color-bg: #000;
+    --color-neutral-1: #e3e4e6;
+    --color-neutral-2: #e3e4e68c;
+    --color-bg-secondary: #121212;
+    --color-text-primary: #fff;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-primary: linear-gradient(99.05deg, #bc3cd8 0.07%, #c54b8c 106.32%);
+    --color-bg: #fff;
+    --color-neutral-1: #3c3c3c;
+    --color-neutral-2: #e3e4e68c;
+    --color-bg-secondary: #121212;
+    --color-text-primary: #000;
+  }
+}
+
+html {
   font-family: 'Work Sans', sans-serif;
   font-size: clamp(15px, 1vw, 20px);
-  /* css vriables*/
-  --color-primary: linear-gradient(99.05deg, #bc3cd8 0.07%, #c54b8c 106.32%);
-  /* --color-bg: linear-gradient(
-    180deg,
-    #010208 16.39%,
-    #010206 20.51%,
-    #040008 24.79%,
-    #010101 30.46%,
-    #010101 34.11%,
-    #010101 36.21%,
-    #010101 100%
-  ); */
-  --color-bg: #000;
-  --color-neutral-1: #e3e4e6;
-  --color-neutral-2: #e3e4e68c;
-  --color-bg-secondary: #121212;
-
-  color-scheme: light dark;
-  background: var(--color-bg);
-
+  color-scheme: light dark auto;
+  scroll-behavior: smooth;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-}
-
-html {
-  scroll-behavior: smooth;
   /* cursor: none; */
 }
 
@@ -69,86 +69,11 @@ html {
   }
 } */
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --color-neutral-1: invert(#e3e4e6);
-    --color-neutral-2: invert(#e3e4e68c);
-    --color-bg: linear-gradient(
-      180deg,
-      #ffffff 16.39%,
-      #ffffff 20.51%,
-      #ffffff 24.79%,
-      #ffffff 30.46%,
-      #ffffff 34.11%,
-      #ffffff 36.21%,
-      #ffffff 100%
-    );
-    color: #000;
-    --color-bg-secondary: linear-gradient(
-      180deg,
-      #ffffff 16.39%,
-      #ffffff 20.51%,
-      #ffffff 24.79%,
-      #ffffff 30.46%,
-      #ffffff 34.11%,
-      #ffffff 36.21%,
-      #ffffff 100%
-    );
-    background-color: var(--color-bg);
-  }
-}
-
-[data-theme='dark'] {
-  --color-primary: linear-gradient(99.05deg, #bc3cd8 0.07%, #c54b8c 106.32%);
-  /* --color-bg: linear-gradient(
-    180deg,
-    #010208 16.39%,
-    #010206 20.51%,
-    #040008 24.79%,
-    #010101 30.46%,
-    #010101 34.11%,
-    #010101 36.21%,
-    #010101 100%
-  ); */
-  --color-bg: #000;
-  --color-neutral-1: #e3e4e6;
-  --color-neutral-2: #fff;
-  background: var(--color-bg);
-  --color-bg-secondary: #121212;
-  transition: background-color 0.5s ease;
-}
-
-[data-theme='light'] {
-  --color-neutral-1: invert(#e3e4e6);
-  --color-neutral-2: invert(#e3e4e68c);
-  --color-bg: linear-gradient(
-    180deg,
-    #ffffff 16.39%,
-    #ffffff 20.51%,
-    #ffffff 24.79%,
-    #ffffff 30.46%,
-    #ffffff 34.11%,
-    #ffffff 36.21%,
-    #ffffff 100%
-  );
-  color: #000;
-  --color-bg-secondary: linear-gradient(
-    180deg,
-    #ffffff 16.39%,
-    #ffffff 20.51%,
-    #ffffff 24.79%,
-    #ffffff 30.46%,
-    #ffffff 34.11%,
-    #ffffff 36.21%,
-    #ffffff 100%
-  );
-  background-color: var(--color-bg);
-  transition: background-color 0.5s ease;
-}
-
 body {
   margin: 0;
   padding: 0;
+  color: var(--color-text-primary);
+  background: var(--color-bg);
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
@@ -164,7 +89,6 @@ h1 {
   font-size: clamp(36px, 10vw, 72px);
   line-height: 150%;
   letter-spacing: -0.02em;
-  color: var(--color-neutral-2);
 }
 
 h2 {
@@ -174,7 +98,6 @@ h2 {
   font-size: clamp(28px, 10vw, 56px);
   line-height: 150%;
   letter-spacing: -0.02em;
-  color: var(--color-neutral-2);
 }
 
 h3 {
@@ -183,7 +106,6 @@ h3 {
   line-height: 48px;
   letter-spacing: 0em;
   text-align: left;
-  color: var(--color-neutral-2);
 }
 
 h5 {
@@ -191,7 +113,6 @@ h5 {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.04em;
-  color: var(--color-neutral-2);
 }
 
 /* Animations */
@@ -256,6 +177,7 @@ h5 {
 .container {
   max-width: 2000px;
   margin: 0 auto;
+  margin-top: 4rem;
 }
 
 .nav-item > a {
