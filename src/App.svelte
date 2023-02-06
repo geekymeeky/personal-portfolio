@@ -7,8 +7,6 @@
   import Blogs from './lib/pages/Blogs.svelte'
   import Home from './lib/pages/Home.svelte'
   import BlogPost from './lib/pages/BlogPost.svelte'
-  import AOS from 'aos'
-  import { onMount } from 'svelte'
   export let url = ''
 
   // const cursor = document.createElement('div')
@@ -19,13 +17,6 @@
   //   cursor.style.left = e.clientX + 'px'
   //   cursor.style.top = e.clientY + 'px'
   // })
-
-  onMount(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    })
-  })
 </script>
 
 <Router {url}>
