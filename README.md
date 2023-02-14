@@ -7,7 +7,3 @@ I'm currently a student at Calcutta Institute of Engineering and Management, stu
 
 ### [Srijan's Portfolio](https://srijankgupta.vercel.app/)
 This is my personal portfolio, which I built using Svelte. It's hosted on Vercel, and it's a single-page application. I'm currently working on adding more projects to it.
-
-
-
-
