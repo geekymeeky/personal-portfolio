@@ -1,21 +1,22 @@
 [
   {
-    "company": "One24",
-    "position": "Application Developer Freelance",
-    "duration": "January 2023 - March 2023",
+    "company": "Cloudkaptan Consultancy Services Pvt. Ltd.",
+    "position": "Software Engineer Trainee",
+    "duration": "July, 2023 - Present",
     "description": [
-      "Revamped flows to improve the user experience and address different flow challenges.",
-      "Played a critical role in delivering a high-quality application that meets the needs of end-users."
+      "Designing and building custom solutions using Apex, Lightning on Salesforce.",
+      "Worked closely with stakeholders to gather requirements and delivered high-quality solutions on time and within budget."
     ],
-    "skills": ["Flutter", "Android", "BLoC", "Firebase"]
+    "skills": ["Apex", "Salesforce", "Lightning", "Process Automation"]
   },
   {
     "company": "Prepfully",
     "position": "Software Engineering Intern",
     "duration": "November 2022 - Present",
     "description": [
-      "Worked on the front-end of the website using Next.js and Tailwind CSS",
-      "Fetch data from Prismic CMS and display it on the website"
+      "Developed user-friendly dashboards for end users.",
+      "Contributed to the development of 3 products using Next.js.",
+      "Designed an intuitive Question Bank, increasing traffic by 25%."
     ],
     "skills": ["Next.js", "TailwindCSS", "Prismic", "PostgreSQL"]
   },
@@ -24,8 +25,8 @@
     "position": "Web Development Intern",
     "duration": "October 2022 - Present",
     "description": [
-      "Developed a website for a client using HTML, CSS, and JavaScript.",
-      "Worked on the front-end of the website using React.js and Bootstrap."
+      "Developed a client website using HTML, CSS, and JavaScript.",
+      "Transformed Figma designs into interactive websites."
     ],
     "skills": ["HTML", "CSS", "JavaScript", "React"]
   },
@@ -34,8 +35,9 @@
     "position": "Software Developer Intern",
     "duration": "October 2021 - July 2022",
     "description": [
-      "Implemented threading for IEM-Secure to reduce scan time.",
-      "Revamped CI/CD pipeline for web-app deployment using AWS."
+      "Led a team of 5+ developers on various client projects.",
+      "Implemented threading in IEMSecure to reduce scan time.",
+      "Improved CI/CD pipeline for web-app deployment using AWS."
     ],
     "skills": ["MERN", "UI/UX", "Fast API", "Machine Learning"]
   },

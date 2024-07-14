@@ -52,7 +52,7 @@
   .hero {
     display: flex;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -74,7 +74,7 @@
     -ms-animation: 25s linear 0s normal none infinite animate;
     -o-animation: 25s linear 0s normal none infinite animate;
     animation: 25s linear 0s normal none infinite animate;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 
     -webkit-filter: blur(2px);
