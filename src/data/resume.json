@@ -1,0 +1,455 @@
+{
+  "picture": {
+    "hidden": false,
+    "url": "https://avatars.githubusercontent.com/geekymeeky",
+    "size": 80,
+    "rotation": 0,
+    "aspectRatio": 1,
+    "borderRadius": 0,
+    "borderColor": "rgba(0, 0, 0, 0.5)",
+    "borderWidth": 0,
+    "shadowColor": "rgba(0, 0, 0, 0.5)",
+    "shadowWidth": 0
+  },
+  "basics": {
+    "name": "Srijan Kumar Gupta",
+    "headline": "Salesforce Developer",
+    "email": "srijankrgupta@gmail.com",
+    "phone": "(+91) 9051798378",
+    "location": "Kolkata, India",
+    "website": {
+      "url": "",
+      "label": ""
+    },
+    "customFields": []
+  },
+  "summary": {
+    "title": "Objective",
+    "columns": 1,
+    "hidden": false,
+    "content": "<p>Salesforce Developer with experience in Apex, LWC, Flows, and Data Cloud. Passionate about building clean, scalable solutions that solve real business problems. Certified and active on Trailhead, with a strong foundation in modern Salesforce development and cloud integrations.</p>"
+  },
+  "sections": {
+    "profiles": {
+      "title": "Profiles",
+      "columns": 3,
+      "hidden": false,
+      "items": [
+        {
+          "id": "27813a1a-c712-4299-8086-5389429188df",
+          "hidden": false,
+          "icon": "linkedin-logo",
+          "iconColor": "",
+          "network": "LinkedIn",
+          "username": "srijankrgupta",
+          "website": {
+            "url": "https://linkedin.com/in/srijankrgupta",
+            "label": "linkedin.com/in/srijankrgupta",
+            "inlineLink": false
+          }
+        },
+        {
+          "id": "e0b5f1a5-83c9-4676-96cb-8f15437890f5",
+          "hidden": false,
+          "icon": "rabbit",
+          "iconColor": "",
+          "network": "Salesforce Trailblazer",
+          "username": "srijankgupta",
+          "website": {
+            "url": "https://salesforce.com/trailblazer/srijankgupta",
+            "label": "salesforce.com/trailblazer/srijankgupta",
+            "inlineLink": false
+          }
+        },
+        {
+          "id": "019d351c-3673-7524-908a-3fbf15428861",
+          "hidden": false,
+          "icon": "github-logo",
+          "iconColor": "",
+          "network": "GitHub",
+          "username": "geekymeeky",
+          "website": {
+            "url": "https://github.com/geekymeeky",
+            "label": "",
+            "inlineLink": false
+          }
+        }
+      ]
+    },
+    "experience": {
+      "title": "Experience",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "cloudkaptan",
+          "hidden": false,
+          "company": "CloudKaptan",
+          "position": "Salesforce Developer",
+          "location": "Kolkata, India",
+          "period": "July 2023 – Present",
+          "website": {
+            "url": "https://www.cloudkaptan.com/",
+            "label": "cloudkaptan.com",
+            "inlineLink": false
+          },
+          "description": "<ul><li>Developed Apex logic and LWC components for dashboards, pricing logic, and UI enhancements.</li><li>Built a revenue dashboard using LWC + Chart.js, enabling real-time insights for leadership.</li><li>Designed a metadata-driven tiered pricing engine for business loans with validations and overrides.</li><li>Migrated over 20 legacy automation flows from Process Builder to Flows as part of modernization.</li><li>Collaborated with AWS data migration team to verify and validate 500K+ records using Apex and SOQL.</li></ul>",
+          "roles": []
+        },
+        {
+          "id": "prepfully",
+          "hidden": false,
+          "company": "Prepfully",
+          "position": "Frontend Web Developer",
+          "location": "Remote",
+          "period": "November 2022 – July 2023",
+          "website": {
+            "url": "https://prepfully.com/",
+            "label": "prepfully.com",
+            "inlineLink": false
+          },
+          "description": "<ul><li>Built user dashboards and admin tools using React (Next.js), improving performance and UX.</li><li>Launched a question bank experience that increased session time and search usage by 25%.</li></ul>",
+          "roles": []
+        },
+        {
+          "id": "d0f8d16f-98c4-4061-8977-9a0718617887",
+          "hidden": false,
+          "company": "IEMA Research and Development",
+          "position": "Software Development Intern",
+          "location": "Kolkata, India",
+          "period": "October 2021 – July 2022",
+          "website": {
+            "url": "https://iemlabs.com/",
+            "label": "iemlabs.com",
+            "inlineLink": false
+          },
+          "description": "<ul><li>Led a team of 5 to deliver client web apps; improved CI/CD pipelines and used AWS for deployment.</li><li>Reduced app scanning time by 40% through multithreaded refactor of core utility (IEMSecure).</li></ul>",
+          "roles": []
+        }
+      ]
+    },
+    "education": {
+      "title": "Education",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "67098e9a-7c9e-47c0-a947-062e0861614b",
+          "hidden": false,
+          "school": "Calcutta Institute of Engineering and Management",
+          "degree": "B.Tech",
+          "area": "Computer Science and Engineering",
+          "grade": "9.60",
+          "location": "",
+          "period": "2019 – 2023",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": ""
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projects",
+      "columns": 2,
+      "hidden": false,
+      "items": [
+        {
+          "id": "salesforce-ci-cd",
+          "hidden": false,
+          "name": "Salesforce CI/CD Pipeline Automation",
+          "period": "",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p>Architected and deployed a comprehensive CI/CD pipeline for Salesforce environments using GitHub Actions and Salesforce DX (SFDX). <strong>Impact:</strong> Reduced manual deployment time by 80% and minimized production bugs.</p><ul><li><strong>Tech Stack:</strong> Salesforce CLI, GitHub Actions, Shell Scripting, Git.</li><li><strong>Key Highlights:</strong> Automated Apex unit testing, integrated static code analysis (PMD), and implemented seamless sandbox synchronization.</li></ul>"
+        },
+        {
+          "id": "7f818815-5853-4ca8-9eb4-89c0d9526138",
+          "hidden": false,
+          "name": "Revenue Dashboard",
+          "period": "",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p>Engineered a high-performance, real-time financial Revenue Dashboard natively within Salesforce to empower executive decision-making. <strong>Impact:</strong> Increased sales forecasting visibility and eliminated hours of manual report generation.</p><ul><li><strong>Tech Stack:</strong> Lightning Web Components (LWC), Apex, Chart.js, SOQL.</li><li><strong>Key Highlights:</strong> Seamless third-party JavaScript library (Chart.js) integration via Static Resources, dynamic data binding, and fully responsive UI.</li></ul>"
+        },
+        {
+          "id": "6df0d5a3-8321-4209-90d0-48240f907d72",
+          "hidden": false,
+          "name": "Mausam",
+          "period": "",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p>Developed a cross-platform mobile weather application that was officially recognized and featured on the <strong>Google Dev Library</strong> for exemplary code architecture. <strong>Impact:</strong> Showcases strong frontend engineering and state management skills.</p><ul><li><strong>Tech Stack:</strong> Flutter, Dart, REST APIs, JSON Parsing.</li><li><strong>Key Highlights:</strong> Beautiful interactive UI design, real-time geocoding, asynchronous API fetching, and robust error handling.</li></ul>"
+        },
+        {
+          "id": "aws-data-migration",
+          "hidden": false,
+          "name": "AWS S3 & Salesforce Data Migration",
+          "period": "",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p>Designed a highly scalable data archiving and migration strategy bridging Salesforce and AWS S3 to optimize org data limits. <strong>Impact:</strong> Reduced Salesforce storage consumption significantly while maintaining instant data accessibility.</p><ul><li><strong>Tech Stack:</strong> Salesforce Apex, AWS S3, RESTful Callouts, Named Credentials.</li><li><strong>Key Highlights:</strong> Secure OAuth 2.0 authentication, Batch Apex processing for large data volumes, and custom LWC interfaces for on-demand data retrieval.</li></ul>"
+        }
+      ]
+    },
+    "skills": {
+      "title": "Skills",
+      "columns": 2,
+      "hidden": false,
+      "items": [
+        {
+          "id": "81f1816b-b461-421b-a578-83163175409a",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Salesforce",
+          "proficiency": "",
+          "level": 0,
+          "keywords": [
+            "Apex",
+            "Lightning Web Components (LWC)",
+            "SOQL",
+            "Flows",
+            "Validation Rules",
+            "Reports & Dashboards"
+          ]
+        },
+        {
+          "id": "231e3f84-c89b-468e-9080-60b540375681",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Tools",
+          "proficiency": "",
+          "level": 0,
+          "keywords": [
+            "Git",
+            "Dataloader",
+            "Docker",
+            "GitHub",
+            "AWS S3"
+          ]
+        },
+        {
+          "id": "df44470d-c07a-4298-947f-f773347d8487",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Programming Languages",
+          "proficiency": "",
+          "level": 0,
+          "keywords": [
+            "JavaScript",
+            "Python",
+            "SQL",
+            "Java",
+            "Dart"
+          ]
+        },
+        {
+          "id": "038161f3-e578-433e-9097-eb6eb9454173",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Other",
+          "proficiency": "",
+          "level": 0,
+          "keywords": [
+            "React",
+            "MongoDB",
+            "PostgreSQL",
+            "Flutter",
+            "HTML/CSS"
+          ]
+        }
+      ]
+    },
+    "languages": {
+      "title": "Languages",
+      "columns": 3,
+      "hidden": false,
+      "items": [
+        {
+          "id": "019d3516-3597-767d-b755-7c0727b4546f",
+          "hidden": false,
+          "language": "English",
+          "fluency": "",
+          "level": 0
+        },
+        {
+          "id": "019d3516-699e-70ce-97b7-37099afc619b",
+          "hidden": false,
+          "language": "Hindi",
+          "fluency": "",
+          "level": 0
+        },
+        {
+          "id": "019d3516-7e84-70ec-a127-d7d55942c5fd",
+          "hidden": false,
+          "language": "Bengali",
+          "fluency": "",
+          "level": 0
+        }
+      ]
+    },
+    "interests": {
+      "title": "Interests",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "awards": {
+      "title": "Awards",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "certifications": {
+      "title": "Certifications",
+      "columns": 2,
+      "hidden": false,
+      "items": [
+        {
+          "id": "07f9c8d5-1811-477f-a5e2-638e9c20a9a1",
+          "hidden": false,
+          "title": "Salesforce Certified Platform Developer 1",
+          "issuer": "",
+          "date": "January 2026",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": ""
+        },
+        {
+          "id": "b328109d-0275-470a-8959-1e16f3914a87",
+          "hidden": false,
+          "title": "Salesforce Certified Agentforce Specialist",
+          "issuer": "",
+          "date": "December 2025",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": ""
+        },
+        {
+          "id": "879201f8-8095-467f-9467-31ef09a96e9a",
+          "hidden": false,
+          "title": "Salesforce Certified Data Cloud Consultant",
+          "issuer": "",
+          "date": "June 2025",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": ""
+        }
+      ]
+    },
+    "publications": {
+      "title": "Publications",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "volunteer": {
+      "title": "Volunteer",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "references": {
+      "title": "References",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    }
+  },
+  "customSections": [],
+  "metadata": {
+    "template": "rhyhorn",
+    "layout": {
+      "sidebarWidth": 35,
+      "pages": [
+        {
+          "fullWidth": true,
+          "main": [
+            "profiles",
+            "summary",
+            "education",
+            "experience",
+            "projects",
+            "volunteer",
+            "references",
+            "skills",
+            "certifications",
+            "awards",
+            "languages",
+            "interests",
+            "publications"
+          ],
+          "sidebar": []
+        }
+      ]
+    },
+    "page": {
+      "gapX": 2,
+      "gapY": 4,
+      "marginX": 12,
+      "marginY": 10,
+      "format": "a4",
+      "locale": "en-US",
+      "hideIcons": false
+    },
+    "design": {
+      "level": {
+        "icon": "star",
+        "type": "hidden"
+      },
+      "colors": {
+        "primary": "rgba(21, 93, 252, 1)",
+        "text": "rgba(0, 0, 0, 1)",
+        "background": "rgba(255, 255, 255, 1)"
+      }
+    },
+    "typography": {
+      "body": {
+        "fontFamily": "Roboto",
+        "fontWeights": [
+          "400",
+          "600"
+        ],
+        "fontSize": 9.5,
+        "lineHeight": 1.5
+      },
+      "heading": {
+        "fontFamily": "Montserrat",
+        "fontWeights": [
+          "400",
+          "600"
+        ],
+        "fontSize": 12,
+        "lineHeight": 1.5
+      }
+    },
+    "notes": ""
+  }
+}
