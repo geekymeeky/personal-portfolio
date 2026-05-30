@@ -65,9 +65,10 @@ const Hero: React.FC = () => {
           style={{ display: 'flex', justifyContent: 'center' }}
         >
           <motion.img 
-            src="/assets/ASTRO_NoOutfit_WalkRight_SFS20_sRGB.png" 
+            src="/assets/ASTRO_NoOutfit_WalkRight_SFS20_sRGB.webp" 
             alt="Salesforce Astro Mascot" 
             className="mascot-image"
+            fetchPriority="high"
             animate={{ y: [-15, 15, -15], rotate: [-2, 2, -2] }}
             transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
           />

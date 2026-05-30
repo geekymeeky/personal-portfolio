@@ -28,7 +28,7 @@ const Projects: React.FC = () => {
           className="desktop-only"
         >
           <motion.img 
-            src="/assets/EINSTEIN_Coat_Point2HeadRight_SFS20_sRGB.png" 
+            src="/assets/EINSTEIN_Coat_Point2HeadRight_SFS20_sRGB.webp" 
             alt="Einstein" 
             style={{ width: '120px', filter: 'drop-shadow(0 10px 20px rgba(0,0,0,0.3))' }}
             animate={{ y: [-10, 10, -10] }}
@@ -89,7 +89,7 @@ const Projects: React.FC = () => {
         className="mobile-only"
       >
         <motion.img 
-          src="/assets/EINSTEIN_Coat_Point2HeadRight_SFS20_sRGB.png" 
+          src="/assets/EINSTEIN_Coat_Point2HeadRight_SFS20_sRGB.webp" 
           alt="Einstein" 
           style={{ width: '120px', filter: 'drop-shadow(0 10px 20px rgba(0,0,0,0.3))' }}
           animate={{ y: [-10, 10, -10] }}

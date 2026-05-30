@@ -27,7 +27,7 @@ const Experience: React.FC = () => {
           transition={{ duration: 0.8 }}
         >
           <motion.img 
-            src="/assets/CODEY_VestUkulele_RightFront_SFS20_sRGB.png" 
+            src="/assets/CODEY_VestUkulele_RightFront_SFS20_sRGB.webp" 
             alt="Codey" 
             className="mascot-image"
             animate={{ y: [-10, 10, -10] }}
