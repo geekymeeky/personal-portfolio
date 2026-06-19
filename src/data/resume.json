@@ -27,7 +27,7 @@
     "title": "Objective",
     "columns": 1,
     "hidden": false,
-    "content": "<p>Salesforce Developer with experience in Apex, LWC, Flows, and Data Cloud. Passionate about building clean, scalable solutions that solve real business problems. Certified and active on Trailhead, with a strong foundation in modern Salesforce development and cloud integrations.</p>"
+    "content": "<p>I am a Salesforce Developer and Architect who partners with growing businesses to eliminate workflow bottlenecks and scale their digital infrastructure. With deep expertise in Apex, LWC, and Data Cloud, I deliver high-speed, maintainable CRM solutions that directly increase operational efficiency and revenue.</p>"
   },
   "sections": {
     "profiles": {
@@ -93,7 +93,7 @@
             "label": "cloudkaptan.com",
             "inlineLink": false
           },
-          "description": "<ul><li>Developed Apex logic and LWC components for dashboards, pricing logic, and UI enhancements.</li><li>Built a revenue dashboard using LWC + Chart.js, enabling real-time insights for leadership.</li><li>Designed a metadata-driven tiered pricing engine for business loans with validations and overrides.</li><li>Migrated over 20 legacy automation flows from Process Builder to Flows as part of modernization.</li><li>Collaborated with AWS data migration team to verify and validate 500K+ records using Apex and SOQL.</li></ul>",
+          "description": "<ul><li><strong>Accelerated Executive Decision-Making:</strong> Built a real-time revenue dashboard using LWC and Chart.js, giving leadership instant visibility into critical financial metrics and eliminating manual reporting.</li><li><strong>Automated Loan Processing:</strong> Engineered a metadata-driven tiered pricing engine that drastically reduced manual entry errors and improved business loan turnaround times.</li><li><strong>Optimized Legacy Systems:</strong> Modernized the org architecture by migrating 20+ legacy Process Builders to highly efficient Flows, reducing CPU timeout errors and improving system speed.</li><li><strong>Ensured Data Integrity at Scale:</strong> Partnered with AWS migration teams to securely validate over 500,000 records using advanced Apex and SOQL batch processes.</li></ul>",
           "roles": []
         },
         {
@@ -108,7 +108,7 @@
             "label": "prepfully.com",
             "inlineLink": false
           },
-          "description": "<ul><li>Built user dashboards and admin tools using React (Next.js), improving performance and UX.</li><li>Launched a question bank experience that increased session time and search usage by 25%.</li></ul>",
+          "description": "<ul><li><strong>Enhanced User Engagement:</strong> Architected and launched a dynamic question bank experience using React and Next.js that successfully increased average session duration and search utilization by 25%.</li><li><strong>Streamlined Internal Operations:</strong> Developed high-performance admin tools and user dashboards, significantly reducing the operational overhead for internal teams.</li></ul>",
           "roles": []
         },
         {
@@ -123,7 +123,7 @@
             "label": "iemlabs.com",
             "inlineLink": false
           },
-          "description": "<ul><li>Led a team of 5 to deliver client web apps; improved CI/CD pipelines and used AWS for deployment.</li><li>Reduced app scanning time by 40% through multithreaded refactor of core utility (IEMSecure).</li></ul>",
+          "description": "<ul><li><strong>Optimized Core Infrastructure:</strong> Refactored the core IEMSecure utility using multithreading, successfully reducing application scanning times by a massive 40%.</li><li><strong>Accelerated Deployment Cycles:</strong> Modernized CI/CD pipelines and AWS deployments while leading a 5-person engineering team to successfully deliver responsive client web applications.</li></ul>",
           "roles": []
         }
       ]
@@ -166,7 +166,7 @@
             "label": "",
             "inlineLink": false
           },
-          "description": "<p>Architected and deployed a comprehensive CI/CD pipeline for Salesforce environments using GitHub Actions and Salesforce DX (SFDX). <strong>Impact:</strong> Reduced manual deployment time by 80% and minimized production bugs.</p><ul><li><strong>Tech Stack:</strong> Salesforce CLI, GitHub Actions, Shell Scripting, Git.</li><li><strong>Key Highlights:</strong> Automated Apex unit testing, integrated static code analysis (PMD), and implemented seamless sandbox synchronization.</li></ul>"
+          "description": "<p>I architected a fully automated CI/CD pipeline for Salesforce using GitHub Actions and SFDX, eliminating the need for manual, error-prone change sets. <strong>Business Impact:</strong> Reduced deployment times by 80% and dramatically minimized production bugs through automated PMD static code analysis.</p>"
         },
         {
           "id": "7f818815-5853-4ca8-9eb4-89c0d9526138",
@@ -178,7 +178,7 @@
             "label": "",
             "inlineLink": false
           },
-          "description": "<p>Engineered a high-performance, real-time financial Revenue Dashboard natively within Salesforce to empower executive decision-making. <strong>Impact:</strong> Increased sales forecasting visibility and eliminated hours of manual report generation.</p><ul><li><strong>Tech Stack:</strong> Lightning Web Components (LWC), Apex, Chart.js, SOQL.</li><li><strong>Key Highlights:</strong> Seamless third-party JavaScript library (Chart.js) integration via Static Resources, dynamic data binding, and fully responsive UI.</li></ul>"
+          "description": "<p>I engineered a real-time, interactive financial Revenue Dashboard natively within Salesforce using LWC and Chart.js. <strong>Business Impact:</strong> Empowered the executive team with instant visibility into sales forecasting, completely eliminating hours of manual, spreadsheet-based report generation.</p>"
         },
         {
           "id": "6df0d5a3-8321-4209-90d0-48240f907d72",
@@ -190,7 +190,7 @@
             "label": "",
             "inlineLink": false
           },
-          "description": "<p>Developed a cross-platform mobile weather application that was officially recognized and featured on the <strong>Google Dev Library</strong> for exemplary code architecture. <strong>Impact:</strong> Showcases strong frontend engineering and state management skills.</p><ul><li><strong>Tech Stack:</strong> Flutter, Dart, REST APIs, JSON Parsing.</li><li><strong>Key Highlights:</strong> Beautiful interactive UI design, real-time geocoding, asynchronous API fetching, and robust error handling.</li></ul>"
+          "description": "<p>I developed \"Mausam\", a highly polished, cross-platform mobile weather application that was officially recognized and featured on the <strong>Google Dev Library</strong> for its exemplary code architecture. <strong>Impact:</strong> Demonstrates a deep understanding of modern frontend engineering, complex state management, and real-time asynchronous API integration.</p>"
         },
         {
           "id": "aws-data-migration",
@@ -202,7 +202,7 @@
             "label": "",
             "inlineLink": false
           },
-          "description": "<p>Designed a highly scalable data archiving and migration strategy bridging Salesforce and AWS S3 to optimize org data limits. <strong>Impact:</strong> Reduced Salesforce storage consumption significantly while maintaining instant data accessibility.</p><ul><li><strong>Tech Stack:</strong> Salesforce Apex, AWS S3, RESTful Callouts, Named Credentials.</li><li><strong>Key Highlights:</strong> Secure OAuth 2.0 authentication, Batch Apex processing for large data volumes, and custom LWC interfaces for on-demand data retrieval.</li></ul>"
+          "description": "<p>I designed a secure, highly scalable data archiving strategy bridging Salesforce and AWS S3 via RESTful callouts and Batch Apex. <strong>Business Impact:</strong> Protected the company from expensive Salesforce storage limit upgrades by seamlessly archiving large data volumes while maintaining instant, on-demand accessibility via custom Lightning Web Components.</p>"
         }
       ]
     },

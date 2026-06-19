@@ -20,7 +20,7 @@ const Home: React.FC = () => {
         <meta property="og:type" content="website" />
       </Helmet>
       
-      <main className="relative z-10 w-full max-w-[1200px] mx-auto px-lg flex flex-col gap-xxl">
+      <main className="relative z-10 w-full max-w-[1200px] mx-auto px-lg flex flex-col">
         <TrailConnector />
         <Hero />
         <About />

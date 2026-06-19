@@ -1,59 +1,87 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Calendar } from 'lucide-react';
+import { ArrowRight, ChevronDown } from 'lucide-react';
 import resumeData from '../../data/resume.json';
 
 const Hero: React.FC = () => {
   return (
-    <section id="hero" className="py-xl flex items-center min-h-screen scroll-mt-[100px] w-full">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-xl items-center w-full">
-        
-        {/* Text Content */}
+    <section id="hero" className="relative flex flex-col items-center justify-center min-h-screen w-full text-center scroll-mt-[100px] px-4">
+      
+      {/* Subtle Astro Background / Integration */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 0.15, scale: 1 }}
+        transition={{ duration: 2, ease: "easeOut" }}
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none -z-10 w-[600px] max-w-[90vw] blur-sm mix-blend-screen"
+      >
+        <img 
+          src="/assets/ASTRO_NoOutfit_WalkRight_SFS20_sRGB.webp" 
+          alt="Mascot silhouette" 
+          className="w-full h-auto opacity-30 saturate-0"
+        />
+      </motion.div>
+
+      <motion.div 
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+        className="z-10 flex flex-col items-center max-w-4xl"
+      >
         <motion.div 
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="z-10"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
+          className="mb-8"
         >
-          <div className="mb-6">
-            <div className="inline-block px-3 py-1 bg-primary/15 text-[#66c8ff] border border-primary/30 rounded-full text-xs font-semibold tracking-wider uppercase">Salesforce Developer</div>
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-surface text-primary border border-border rounded-full text-sm font-semibold tracking-widest uppercase backdrop-blur-md">
+            <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+            Senior Salesforce Engineer
           </div>
-          
-          <h1 className="heading-xl">
-            I build scalable <span className="text-primary">Salesforce</span> solutions.
-          </h1>
-          <p className="text-[clamp(1.05rem,1.5vw,1.25rem)] text-text-muted leading-relaxed font-normal max-w-[600px] mb-8">
-            Hi, I'm {resumeData.basics.name}. I help businesses automate complex workflows, improve data visibility, and maximize their Salesforce ROI.
-          </p>
+        </motion.div>
+        
+        <h1 className="heading-xl tracking-tighter mb-6 leading-[1.05]">
+          Salesforce <br/>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-primary to-white">
+            Developer & Architect.
+          </span>
+        </h1>
+        
+        <p className="text-lg md:text-2xl text-text-muted leading-relaxed font-light max-w-2xl mb-12">
+          Hi, I'm <strong className="text-white font-medium">{resumeData.basics.name}</strong>. I build fast, scalable Salesforce solutions that help businesses automate workflows and increase revenue.
+        </p>
+        
+        <div className="flex flex-col sm:flex-row gap-6 items-center">
+          <a 
+            href="#projects" 
+            className="group relative inline-flex items-center gap-3 px-8 py-4 bg-primary text-dark rounded-full font-bold text-lg overflow-hidden transition-transform hover:scale-105"
+          >
+            <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></div>
+            <span className="relative z-10 flex items-center gap-2">View My Work <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" /></span>
+          </a>
           
           <a 
             href="https://calendly.com/srijankrgupta/30min" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-primary to-[#0077A6] text-white no-underline rounded-full font-semibold text-[1.1rem] shadow-[0_8px_32px_rgba(0,161,224,0.3)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_40px_rgba(0,161,224,0.5)]"
+            className="inline-flex items-center gap-3 px-8 py-4 text-white border border-border rounded-full font-semibold text-lg hover:bg-surface hover:border-primary/50 transition-all"
           >
-            <Calendar size={20} /> Let's Work Together
+            Hire Me
           </a>
-        </motion.div>
+        </div>
+      </motion.div>
 
-        {/* Mascot Illustration */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8, x: 50 }}
-          animate={{ opacity: 1, scale: 1, x: 0 }}
-          transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-          className="flex justify-center"
-        >
-          <motion.img 
-            src="/assets/ASTRO_NoOutfit_WalkRight_SFS20_sRGB.webp" 
-            alt="Salesforce Astro Mascot" 
-            className="max-w-full h-auto drop-shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
-            fetchPriority="high"
-            animate={{ y: [-15, 15, -15], rotate: [-2, 2, -2] }}
-            transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
-          />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5, duration: 1 }}
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-text-muted"
+      >
+        <span className="text-xs tracking-widest uppercase">Scroll</span>
+        <motion.div animate={{ y: [0, 8, 0] }} transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}>
+          <ChevronDown size={20} className="text-primary" />
         </motion.div>
-
-      </div>
+      </motion.div>
+      
     </section>
   );
 };

@@ -71,16 +71,19 @@ void main() {
     float f_light = fbm(tc * 0.4 + vec2(0.1, 0.1));
     float dif = clamp((f - f_light) * 3.0 + 0.5, 0.0, 1.0);
     
-    // Sky color (Deep Dark Blue for contrast)
-    vec3 col = vec3(0.02, 0.05, 0.15) - p.y * 0.2;
-    col = mix(col, vec3(0.0, 0.2, 0.4), exp(-10.0*max(p.y+0.2, 0.0)));
+    // Sky color (Obsidian Dark)
+    vec3 col = vec3(0.02, 0.02, 0.03) - p.y * 0.1;
+    col = mix(col, vec3(0.01, 0.05, 0.10), exp(-8.0*max(p.y+0.2, 0.0)));
     
-    // Cloud color with directional light scattering (Moody Blue/Grey)
-    vec3 cloudCol = vec3(0.1, 0.3, 0.5) * (0.4 + 0.6*dif);
+    // Cloud color with directional light scattering (Cyan / Dark Blue highlights)
+    vec3 cloudCol = vec3(0.05, 0.25, 0.40) * (0.2 + 0.8*dif);
     
     // Mix with atmospheric perspective (fade to horizon)
     float fade = exp(-0.02 * t);
-    col = mix(col, cloudCol, den * fade);
+    col = mix(col, cloudCol, den * fade * 0.8);
+    
+    // Subtle overall darkening to keep it ambient
+    col *= 0.85;
     
     gl_FragColor = vec4(col, 1.0);
 }

@@ -1,50 +1,73 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useRef } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import resumeData from '../../data/resume.json';
 
 const About: React.FC = () => {
-  return (
-    <section id="about" className="py-xl flex flex-col items-start scroll-mt-[100px] w-full">
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.6 }}
-        className="mb-xl w-full"
-      >
-        <h2 className="heading-lg">About Me</h2>
-      </motion.div>
+  const containerRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start end", "end start"]
+  });
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-xl items-center w-full">
+  const y1 = useTransform(scrollYProgress, [0, 1], [100, -100]);
+  const y2 = useTransform(scrollYProgress, [0, 1], [-50, 50]);
+
+  return (
+    <section id="about" ref={containerRef} className="py-[150px] flex flex-col items-center justify-center scroll-mt-[100px] w-full relative overflow-hidden">
+      
+      {/* Background typographic watermark */}
+      <div className="absolute inset-0 pointer-events-none flex items-center justify-center opacity-[0.03] overflow-hidden z-0">
+        <h2 className="text-[20vw] font-bold tracking-tighter whitespace-nowrap text-white">ENGINEER</h2>
+      </div>
+
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-center w-full max-w-[1200px] relative z-10">
+        
+        {/* Abstracted / Premium Portrait Presentation */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.95, x: -30 }}
-          whileInView={{ opacity: 1, scale: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="glass-card p-xl"
+          style={{ y: y2 }}
+          className="lg:col-span-5 flex justify-center lg:justify-end"
         >
-          <p className="text-[clamp(1.05rem,1.5vw,1.25rem)] text-white leading-relaxed mb-md">
-            I specialize in building custom Salesforce applications that solve real business problems.
-          </p>
-          <div className="text-text-muted leading-relaxed text-base" dangerouslySetInnerHTML={{ __html: resumeData.summary.content }} />
+          <div className="relative group">
+            <div className="absolute -inset-1 bg-gradient-to-tr from-primary to-transparent rounded-3xl blur-[30px] opacity-20 group-hover:opacity-40 transition-opacity duration-700" />
+            <div className="w-[280px] h-[360px] md:w-[340px] md:h-[440px] rounded-3xl overflow-hidden relative border border-border shadow-2xl grayscale hover:grayscale-0 transition-all duration-700">
+              <img 
+                src={resumeData.picture.url} 
+                alt={resumeData.basics.name} 
+                className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/20 to-transparent mix-blend-overlay"></div>
+            </div>
+            {/* Technical decoration */}
+            <div className="absolute -bottom-6 -left-6 bg-surface border border-border px-6 py-4 rounded-xl shadow-xl backdrop-blur-md">
+              <p className="text-primary font-mono text-xs uppercase tracking-widest">Sys.Status</p>
+              <p className="text-white font-bold text-lg">Optimized</p>
+            </div>
+          </div>
         </motion.div>
 
+        {/* Typographic Bio */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.9, x: 30 }}
-          whileInView={{ opacity: 1, scale: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="flex justify-center"
+          style={{ y: y1 }}
+          className="lg:col-span-7 flex flex-col justify-center"
         >
-          <div className="relative">
-            <div className="absolute -inset-2.5 bg-gradient-to-tr from-primary to-transparent rounded-full blur-[20px] opacity-50" />
-            <img 
-              src={resumeData.picture.url} 
-              alt={resumeData.basics.name} 
-              className="w-[240px] h-[240px] rounded-full border-4 border-white/10 relative z-10 shadow-[0_20px_40px_rgba(0,0,0,0.5)] object-cover"
+          <h2 className="heading-xl text-white !mb-8">
+            Why Work <br/>
+            <span className="text-text-muted">With Me?</span>
+          </h2>
+          
+          <div className="w-16 h-1 bg-primary mb-8 rounded-full"></div>
+
+          <div className="text-xl md:text-2xl text-text-muted leading-[1.8] font-light max-w-2xl space-y-6">
+            <p className="text-white font-medium">
+              I deliver reliable, high-speed Salesforce implementations that drive actual business outcomes.
+            </p>
+            <div 
+              className="text-text-muted/80 text-lg md:text-xl" 
+              dangerouslySetInnerHTML={{ __html: resumeData.summary.content }} 
             />
           </div>
         </motion.div>
+
       </div>
     </section>
   );
