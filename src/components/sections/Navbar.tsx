@@ -30,35 +30,32 @@ const Navbar: React.FC = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.8, ease: 'easeOut' }}
-      className={`navbar ${isScrolled ? 'scrolled' : ''}`}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-dark/60 backdrop-blur-md border-b border-white/5' : 'bg-transparent border-b border-transparent'}`}
     >
-      <div className="navbar-container">
-        <Link to="/" className="navbar-logo" style={{ fontFamily: 'var(--font-display)', fontWeight: 600, letterSpacing: '-0.02em' }}>
-          Srijan<span style={{ color: 'var(--color-primary)' }}>.</span>
+      <div className="max-w-[1200px] mx-auto px-lg py-4 flex justify-between items-center">
+        <Link to="/" className="text-2xl font-display font-semibold tracking-tight text-white no-underline">
+          Srijan<span className="text-primary">.</span>
         </Link>
         
-        <ul className="navbar-links desktop-only-flex">
+        <ul className="hidden md:flex gap-8 m-0 p-0 list-none">
           {links.map((link, i) => (
             <li key={i}>
-              <Link to={link.href} className="navbar-link">{link.name}</Link>
+              <Link to={link.href} className="text-text-muted text-sm font-semibold no-underline transition-colors duration-200 hover:text-white">{link.name}</Link>
             </li>
           ))}
         </ul>
 
-        {/* Simple mobile menu button */}
-        <div className="mobile-only-flex">
+        <div className="flex md:hidden">
           <button 
-            className="navbar-link" 
-            style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '0.5rem' }}
+            className="bg-transparent border-none cursor-pointer p-2"
             onClick={() => setIsMobileMenuOpen(true)}
             aria-label="Open menu"
           >
-            <Menu size={24} color="var(--color-text)" />
+            <Menu size={24} className="text-text" />
           </button>
         </div>
       </div>
 
-      {/* Mobile Menu Overlay */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div 
@@ -66,47 +63,21 @@ const Navbar: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.2 }}
-            style={{
-              position: 'fixed',
-              top: 0,
-              left: 0,
-              width: '100vw',
-              height: '100vh',
-              background: 'rgba(10, 15, 26, 0.98)',
-              zIndex: 1000,
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'center',
-              alignItems: 'center',
-              backdropFilter: 'blur(10px)'
-            }}
+            className="fixed top-0 left-0 w-screen h-screen bg-[#0a0f1a]/98 z-[1000] flex flex-col justify-center items-center backdrop-blur-md"
           >
             <button 
               onClick={() => setIsMobileMenuOpen(false)}
-              style={{
-                position: 'absolute',
-                top: '2rem',
-                right: '2rem',
-                background: 'none',
-                border: 'none',
-                cursor: 'pointer',
-                padding: '0.5rem'
-              }}
+              className="absolute top-8 right-8 bg-transparent border-none cursor-pointer p-2"
               aria-label="Close menu"
             >
-              <X size={32} color="var(--color-text)" />
+              <X size={32} className="text-text" />
             </button>
-            <ul style={{ listStyle: 'none', padding: 0, margin: 0, textAlign: 'center' }}>
+            <ul className="list-none p-0 m-0 text-center">
               {links.map((link, i) => (
-                <li key={i} style={{ margin: '1.5rem 0' }}>
+                <li key={i} className="my-6">
                   <Link 
                     to={link.href} 
-                    style={{
-                      color: 'var(--color-text)',
-                      textDecoration: 'none',
-                      fontSize: '1.5rem',
-                      fontWeight: 600
-                    }}
+                    className="text-text no-underline text-2xl font-semibold"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {link.name}

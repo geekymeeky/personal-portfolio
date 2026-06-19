@@ -28,24 +28,18 @@ const skillsData = [
 
 const Skills: React.FC = () => {
   return (
-    <section id="skills" className="section" style={{ flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+    <section id="skills" className="py-xl flex flex-col items-center text-center scroll-mt-[100px]">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.6 }}
-        style={{ marginBottom: 'var(--space-xl)', width: '100%' }}
+        className="mb-xl w-full"
       >
         <h2 className="heading-lg">Skills & Technologies</h2>
       </motion.div>
 
-      <div className="skills-grid" style={{ 
-        display: 'grid', 
-        gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))', 
-        gap: 'var(--space-lg)', 
-        width: '100%',
-        maxWidth: '900px'
-      }}>
+      <div className="flex flex-wrap justify-center gap-lg w-full max-w-[900px]">
         {skillsData.map((skill, index) => (
           <SpotlightCard
             key={skill.name}
@@ -53,38 +47,10 @@ const Skills: React.FC = () => {
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.05, type: 'spring', stiffness: 200, damping: 15 }}
-            className="skill-badge"
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              justifyContent: 'center',
-              padding: '24px',
-              color: 'var(--color-text-muted)',
-              fontSize: '40px',
-              cursor: 'pointer',
-              aspectRatio: '1/1'
-            }}
-            onMouseOver={(e) => {
-              e.currentTarget.style.color = 'var(--color-primary)';
-              const label = e.currentTarget.querySelector('.skill-label') as HTMLElement;
-              if (label) label.style.opacity = '1';
-            }}
-            onMouseOut={(e) => {
-              e.currentTarget.style.color = 'var(--color-text-muted)';
-              const label = e.currentTarget.querySelector('.skill-label') as HTMLElement;
-              if (label) label.style.opacity = '0';
-            }}
+            className="flex flex-col items-center justify-center p-6 text-text-muted text-[40px] cursor-pointer aspect-square w-[120px] shrink-0 transition-colors duration-200 hover:text-primary"
           >
             {skill.icon}
-            <span className="skill-label" style={{
-              fontSize: '0.8rem',
-              fontWeight: 600,
-              marginTop: '12px',
-              opacity: 0,
-              transition: 'opacity 0.3s ease',
-              textAlign: 'center'
-            }}>
+            <span className="text-[0.8rem] font-semibold mt-3 text-center min-h-[2.4em] flex items-center justify-center leading-[1.2]">
               {skill.name}
             </span>
           </SpotlightCard>

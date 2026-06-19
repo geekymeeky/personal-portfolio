@@ -55,30 +55,19 @@ const SpotlightCard: React.FC<SpotlightCardProps> = ({
       onBlur={handleBlur}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={`glass-card ${className}`}
-      style={{
-        ...style,
-        position: 'relative',
-        overflow: 'hidden'
-      }}
+      className={`glass-card relative overflow-hidden ${className}`}
+      style={style}
       {...props}
     >
       <div
-        className="pointer-events-none absolute -inset-px opacity-0 transition duration-300"
+        className="pointer-events-none absolute -inset-px opacity-0 transition duration-300 z-0"
         style={{
           opacity,
           background: `radial-gradient(600px circle at ${position.x}px ${position.y}px, ${spotlightColor}, transparent 40%)`,
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          pointerEvents: 'none',
-          zIndex: 0,
         }}
       />
       {/* Content wrapper to stay above the spotlight */}
-      <div style={{ position: 'relative', zIndex: 1, height: '100%', display: 'flex', flexDirection: 'column' }}>
+      <div className="relative z-10 h-full flex flex-col">
         {children}
       </div>
     </motion.div>

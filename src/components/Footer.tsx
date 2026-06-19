@@ -13,66 +13,24 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer style={{
-      width: '100%',
-      padding: 'var(--space-xl) var(--space-lg)',
-      borderTop: '1px solid rgba(255,255,255,0.05)',
-      marginTop: 'auto',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      gap: 'var(--space-md)',
-      position: 'relative',
-      zIndex: 10,
-      background: 'linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.3) 100%)'
-    }}>
+    <footer className="w-full px-lg py-xl border-t border-white/5 mt-auto flex flex-col items-center justify-center gap-md relative z-10 bg-gradient-to-b from-transparent to-black/30">
       
-      <div style={{
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        width: '100%',
-        maxWidth: '1200px',
-        flexWrap: 'wrap',
-        gap: '1rem'
-      }}>
+      <div className="flex justify-between items-center w-full max-w-[1200px] flex-wrap gap-4">
         
         {/* Brand / Name */}
-        <div style={{ fontFamily: 'var(--font-display)', fontSize: '1.25rem', fontWeight: 600, letterSpacing: '-0.02em' }}>
-          Srijan<span style={{ color: 'var(--color-primary)' }}>.</span>
+        <div className="font-display text-xl font-semibold tracking-[-0.02em]">
+          Srijan<span className="text-primary">.</span>
         </div>
 
         {/* Copyright */}
-        <div style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>
+        <div className="text-text-muted text-[0.9rem]">
           &copy; {currentYear} {resumeData.basics.name}. All Rights Reserved.
         </div>
 
         {/* Back to Top */}
         <button 
           onClick={scrollToTop}
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '8px',
-            background: 'rgba(255,255,255,0.05)',
-            border: '1px solid rgba(255,255,255,0.1)',
-            padding: '8px 16px',
-            borderRadius: '100px',
-            color: '#fff',
-            cursor: 'pointer',
-            fontWeight: 500,
-            fontSize: '0.9rem',
-            transition: 'all 0.2s ease'
-          }}
-          onMouseOver={(e) => {
-            e.currentTarget.style.background = 'var(--color-primary)';
-            e.currentTarget.style.borderColor = 'var(--color-primary)';
-          }}
-          onMouseOut={(e) => {
-            e.currentTarget.style.background = 'rgba(255,255,255,0.05)';
-            e.currentTarget.style.borderColor = 'rgba(255,255,255,0.1)';
-          }}
+          className="flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-full text-white cursor-pointer font-medium text-[0.9rem] transition-all duration-200 hover:bg-primary hover:border-primary"
         >
           <ArrowUp size={16} /> Top
         </button>

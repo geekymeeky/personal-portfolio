@@ -8,15 +8,15 @@ const Projects: React.FC = () => {
   const projects = resumeData.sections.projects.items;
 
   return (
-    <section id="projects" className="section" style={{ flexDirection: 'column', alignItems: 'flex-start' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', width: '100%', marginBottom: 'var(--space-xl)' }}>
+    <section id="projects" className="py-xl flex flex-col items-start scroll-mt-[100px] w-full">
+      <div className="flex justify-between items-end w-full mb-xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="heading-lg" style={{ margin: 0 }}>Featured Projects</h2>
+          <h2 className="heading-lg !m-0">Featured Projects</h2>
         </motion.div>
         
         <motion.div
@@ -24,20 +24,19 @@ const Projects: React.FC = () => {
           whileInView={{ opacity: 1, scale: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          style={{ display: 'none' }} // Hidden on mobile, handled by CSS normally
-          className="desktop-only"
+          className="hidden md:block"
         >
           <motion.img 
             src="/assets/EINSTEIN_Coat_Point2HeadRight_SFS20_sRGB.webp" 
             alt="Einstein" 
-            style={{ width: '120px', filter: 'drop-shadow(0 10px 20px rgba(0,0,0,0.3))' }}
+            className="w-[120px] drop-shadow-[0_10px_20px_rgba(0,0,0,0.3)]"
             animate={{ y: [-10, 10, -10] }}
             transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 1 }}
           />
         </motion.div>
       </div>
 
-      <div className="grid-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-xl w-full">
         {projects.map((proj, index) => (
           <SpotlightCard
             key={index}
@@ -46,32 +45,19 @@ const Projects: React.FC = () => {
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
           >
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '16px' }}>
-              <h3 className="heading-md" style={{ margin: 0 }}>{proj.name}</h3>
-              <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', justifyContent: 'flex-end' }}>
+            <div className="flex justify-between items-start mb-4">
+              <h3 className="heading-md !m-0">{proj.name}</h3>
+              <div className="flex gap-2 flex-wrap justify-end">
                 {/* No keywords in this JSON schema for projects, remove badges for now */}
               </div>
             </div>
             <div 
-              className="text-body" 
+              className="text-body line-clamp-3 mb-md" 
               dangerouslySetInnerHTML={{ __html: proj.description }} 
-              style={{
-                display: '-webkit-box',
-                WebkitLineClamp: 3,
-                WebkitBoxOrient: 'vertical',
-                overflow: 'hidden',
-                marginBottom: 'var(--space-md)'
-              }}
             />
             <Link 
               to={`/project/${proj.id}`} 
-              style={{ 
-                color: 'var(--color-primary)', 
-                textDecoration: 'none', 
-                fontWeight: 600,
-                display: 'inline-block',
-                marginTop: 'auto'
-              }}
+              className="text-primary no-underline font-semibold inline-block mt-auto"
             >
               View Case Study →
             </Link>
@@ -85,13 +71,12 @@ const Projects: React.FC = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        style={{ width: '100%', display: 'flex', justifyContent: 'center', marginTop: 'var(--space-xl)' }}
-        className="mobile-only"
+        className="flex md:hidden w-full justify-center mt-xl"
       >
         <motion.img 
           src="/assets/EINSTEIN_Coat_Point2HeadRight_SFS20_sRGB.webp" 
           alt="Einstein" 
-          style={{ width: '120px', filter: 'drop-shadow(0 10px 20px rgba(0,0,0,0.3))' }}
+          className="w-[120px] drop-shadow-[0_10px_20px_rgba(0,0,0,0.3)]"
           animate={{ y: [-10, 10, -10] }}
           transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
         />

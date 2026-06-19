@@ -50,15 +50,8 @@ const CustomCursor: React.FC = () => {
     <>
       {/* Inner Dot (Instant Follow) */}
       <motion.div
+        className="fixed top-0 left-0 w-2 h-2 bg-primary rounded-full pointer-events-none z-[9999]"
         style={{
-          position: 'fixed',
-          top: 0, left: 0,
-          width: '8px',
-          height: '8px',
-          backgroundColor: 'var(--color-primary)',
-          borderRadius: '50%',
-          pointerEvents: 'none',
-          zIndex: 9999,
           x: mousePosition.x - 4,
           y: mousePosition.y - 4,
         }}
@@ -71,16 +64,9 @@ const CustomCursor: React.FC = () => {
       
       {/* Outer Ring (Spring Follow) */}
       <motion.div
+        className="fixed top-0 left-0 w-8 h-8 border border-primary rounded-full pointer-events-none z-[9998] transition-colors duration-200"
         style={{
-          position: 'fixed',
-          top: 0, left: 0,
-          width: '32px',
-          height: '32px',
-          border: '1px solid var(--color-primary)',
           backgroundColor: isHovering ? 'rgba(0, 161, 224, 0.1)' : 'transparent',
-          borderRadius: '50%',
-          pointerEvents: 'none',
-          zIndex: 9998,
           x: springX,
           y: springY,
         }}

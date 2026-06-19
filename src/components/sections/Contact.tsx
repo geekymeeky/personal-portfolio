@@ -13,37 +13,23 @@ const getSocialIcon = (network: string) => {
 
 const Contact: React.FC = () => {
   return (
-    <section id="contact" className="section" style={{ minHeight: '60vh', justifyContent: 'center', textAlign: 'center' }}>
+    <section id="contact" className="py-xl flex flex-col items-center justify-center min-h-[60vh] text-center scroll-mt-[100px] w-full">
       <motion.div
         initial={{ opacity: 0, scale: 0.95, y: 40 }}
         whileInView={{ opacity: 1, scale: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="glass-card"
-        style={{ maxWidth: '600px', width: '100%', padding: 'var(--space-xl)' }}
+        className="glass-card max-w-[600px] w-full p-xl"
       >
-        <h2 className="heading-lg" style={{ marginBottom: 'var(--space-sm)' }}>Let's Work Together</h2>
-        <p className="text-lead" style={{ marginBottom: 'var(--space-lg)' }}>
+        <h2 className="heading-lg !mb-sm">Let's Work Together</h2>
+        <p className="text-[clamp(1.05rem,1.5vw,1.25rem)] text-text-muted leading-relaxed font-normal mb-lg">
           Looking for a Salesforce expert? I am currently available for freelance work and full-time opportunities.
         </p>
         
-        <div style={{ display: 'flex', justifyContent: 'center', gap: 'var(--space-md)', flexWrap: 'wrap' }}>
+        <div className="flex justify-center gap-md flex-wrap">
           <a 
             href={`mailto:${resumeData.basics.email}`}
-            style={{
-              padding: '12px 24px',
-              background: 'var(--color-primary)',
-              color: '#fff',
-              textDecoration: 'none',
-              borderRadius: '100px',
-              fontWeight: 600,
-              transition: 'transform 0.2s ease',
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '8px'
-            }}
-            onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
-            onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}
+            className="px-6 py-3 bg-primary text-white no-underline rounded-full font-semibold transition-transform duration-200 inline-flex items-center gap-2 hover:-translate-y-0.5"
           >
             <FaEnvelope size={18} /> Email Me
           </a>
@@ -54,27 +40,7 @@ const Contact: React.FC = () => {
               href={profile.website?.url || '#'}
               target="_blank"
               rel="noopener noreferrer"
-              style={{
-                padding: '12px 24px',
-                background: 'rgba(255,255,255,0.1)',
-                border: '1px solid rgba(255,255,255,0.2)',
-                color: '#fff',
-                textDecoration: 'none',
-                borderRadius: '100px',
-                fontWeight: 600,
-                transition: 'all 0.2s ease',
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '8px'
-              }}
-              onMouseOver={(e) => {
-                e.currentTarget.style.transform = 'translateY(-2px)';
-                e.currentTarget.style.background = 'rgba(255,255,255,0.2)';
-              }}
-              onMouseOut={(e) => {
-                e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.background = 'rgba(255,255,255,0.1)';
-              }}
+              className="px-6 py-3 bg-white/10 border border-white/20 text-white no-underline rounded-full font-semibold transition-all duration-200 inline-flex items-center gap-2 hover:-translate-y-0.5 hover:bg-white/20"
             >
               {getSocialIcon(profile.network)} {profile.network}
             </a>

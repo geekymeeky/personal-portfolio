@@ -5,24 +5,24 @@ import resumeData from '../../data/resume.json';
 
 const Hero: React.FC = () => {
   return (
-    <section id="hero" className="section" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center' }}>
-      <div className="grid-2" style={{ alignItems: 'center', width: '100%' }}>
+    <section id="hero" className="py-xl flex items-center min-h-screen scroll-mt-[100px] w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-xl items-center w-full">
         
         {/* Text Content */}
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          style={{ zIndex: 10 }}
+          className="z-10"
         >
-          <div style={{ marginBottom: '24px' }}>
-            <div className="badge">Salesforce Developer</div>
+          <div className="mb-6">
+            <div className="inline-block px-3 py-1 bg-primary/15 text-[#66c8ff] border border-primary/30 rounded-full text-xs font-semibold tracking-wider uppercase">Salesforce Developer</div>
           </div>
           
           <h1 className="heading-xl">
-            I build scalable <span className="highlight">Salesforce</span> solutions.
+            I build scalable <span className="text-primary">Salesforce</span> solutions.
           </h1>
-          <p className="text-lead" style={{ maxWidth: '600px', marginBottom: '32px' }}>
+          <p className="text-[clamp(1.05rem,1.5vw,1.25rem)] text-text-muted leading-relaxed font-normal max-w-[600px] mb-8">
             Hi, I'm {resumeData.basics.name}. I help businesses automate complex workflows, improve data visibility, and maximize their Salesforce ROI.
           </p>
           
@@ -30,28 +30,7 @@ const Hero: React.FC = () => {
             href="https://calendly.com/srijankrgupta/30min" 
             target="_blank" 
             rel="noopener noreferrer"
-            style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '12px',
-              padding: '16px 32px',
-              background: 'linear-gradient(90deg, var(--color-primary), #0077A6)',
-              color: '#ffffff',
-              textDecoration: 'none',
-              borderRadius: '100px',
-              fontWeight: 600,
-              fontSize: '1.1rem',
-              boxShadow: '0 8px 32px rgba(0, 161, 224, 0.3)',
-              transition: 'transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease'
-            }}
-            onMouseOver={(e) => {
-              e.currentTarget.style.transform = 'translateY(-4px)';
-              e.currentTarget.style.boxShadow = '0 12px 40px rgba(0, 161, 224, 0.5)';
-            }}
-            onMouseOut={(e) => {
-              e.currentTarget.style.transform = 'translateY(0)';
-              e.currentTarget.style.boxShadow = '0 8px 32px rgba(0, 161, 224, 0.3)';
-            }}
+            className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-primary to-[#0077A6] text-white no-underline rounded-full font-semibold text-[1.1rem] shadow-[0_8px_32px_rgba(0,161,224,0.3)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_40px_rgba(0,161,224,0.5)]"
           >
             <Calendar size={20} /> Let's Work Together
           </a>
@@ -62,12 +41,12 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0, scale: 0.8, x: 50 }}
           animate={{ opacity: 1, scale: 1, x: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-          style={{ display: 'flex', justifyContent: 'center' }}
+          className="flex justify-center"
         >
           <motion.img 
             src="/assets/ASTRO_NoOutfit_WalkRight_SFS20_sRGB.webp" 
             alt="Salesforce Astro Mascot" 
-            className="mascot-image"
+            className="max-w-full h-auto drop-shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
             fetchPriority="high"
             animate={{ y: [-15, 15, -15], rotate: [-2, 2, -2] }}
             transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}

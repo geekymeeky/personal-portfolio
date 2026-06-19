@@ -14,53 +14,35 @@ const AboutPage: React.FC = () => {
         <meta property="og:title" content="About Srijan | My Journey" />
       </Helmet>
 
-      <main className="content-overlay" style={{ minHeight: '100vh', paddingTop: '120px', paddingBottom: '120px' }}>
+      <main className="relative z-10 w-full max-w-[1200px] mx-auto px-lg flex flex-col min-h-screen py-[120px]">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
-        <Link to="/" style={{ 
-          display: 'inline-flex', 
-          alignItems: 'center', 
-          gap: '8px', 
-          color: 'var(--color-primary)',
-          textDecoration: 'none',
-          marginBottom: 'var(--space-xl)',
-          fontWeight: 600,
-          textTransform: 'uppercase',
-          letterSpacing: '0.1em',
-          fontSize: '0.85rem'
-        }}>
+        <Link to="/" className="inline-flex items-center gap-2 text-primary no-underline mb-xl font-semibold uppercase tracking-[0.1em] text-[0.85rem]">
           <ArrowLeft size={16} /> Back to Home
         </Link>
 
         {/* Cinematic Header */}
-        <div style={{ marginBottom: 'var(--space-xxl)' }}>
+        <div className="mb-xxl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-xl)', flexWrap: 'wrap' }}
+            className="flex items-center gap-xl flex-wrap"
           >
             <img 
               src={resumeData.picture.url} 
               alt={resumeData.basics.name} 
-              style={{ 
-                width: '140px', 
-                height: '140px', 
-                borderRadius: '50%', 
-                border: '1px solid rgba(255,255,255,0.1)',
-                boxShadow: '0 20px 40px rgba(0,0,0,0.3)',
-                objectFit: 'cover'
-              }}
+              className="w-[140px] h-[140px] rounded-full border border-white/10 shadow-[0_20px_40px_rgba(0,0,0,0.3)] object-cover"
             />
             <div>
-              <div className="badge" style={{ marginBottom: '1rem' }}>{resumeData.basics.location}</div>
-              <h1 className="heading-xl" style={{ fontSize: 'clamp(3rem, 7vw, 5rem)', marginBottom: '0.5rem' }}>
+              <div className="inline-block px-3 py-1 bg-primary/15 text-[#66c8ff] border border-primary/30 rounded-full text-xs font-semibold tracking-wider uppercase mb-4">{resumeData.basics.location}</div>
+              <h1 className="heading-xl text-[clamp(3rem,7vw,5rem)] mb-2">
                 My Journey
               </h1>
-              <h2 className="heading-lg" style={{ color: 'var(--color-primary)', fontWeight: 400, fontSize: '1.5rem', marginBottom: 0 }}>
+              <h2 className="text-primary font-normal text-[1.5rem] m-0">
                 {resumeData.basics.headline}
               </h2>
             </div>
@@ -72,20 +54,18 @@ const AboutPage: React.FC = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="glass-card" 
-          style={{ padding: 'var(--space-xl)' }}
+          className="glass-card p-xl" 
         >
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)' }}>
+          <div className="flex flex-col gap-lg">
             
             <div 
-              className="text-body detail-html" 
+              className="text-body text-[1.15rem] leading-[1.8]" 
               dangerouslySetInnerHTML={{ __html: resumeData.summary.content }} 
-              style={{ fontSize: '1.15rem', lineHeight: 1.8 }}
             />
             
-            <div style={{ marginTop: 'var(--space-md)' }}>
-               <h3 className="heading-md" style={{ color: '#fff', marginBottom: '1rem' }}>Philosophy</h3>
-               <p className="text-body" style={{ fontSize: '1.15rem', lineHeight: 1.8 }}>
+            <div className="mt-md">
+               <h3 className="heading-md text-white mb-4">Philosophy</h3>
+               <p className="text-body text-[1.15rem] leading-[1.8]">
                  I believe that writing code is only 20% of the job. The other 80% is deeply understanding the business problem, communicating effectively with stakeholders, and architecting solutions that are scalable, secure, and intuitive for end-users. 
                </p>
             </div>

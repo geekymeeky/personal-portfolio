@@ -11,24 +11,12 @@ const TrailConnector: React.FC = () => {
   const scaleY = useSpring(scrollYProgress, { stiffness: 100, damping: 30, restDelta: 0.001 });
 
   return (
-    <div ref={ref} style={{
-      position: 'absolute',
-      top: '0',
-      bottom: '0',
-      left: 'var(--space-lg)', // Align with the content padding
-      width: '2px',
-      zIndex: 0,
-      pointerEvents: 'none',
-      background: 'rgba(255, 255, 255, 0.05)', // Faint background track
-    }}>
+    <div ref={ref} className="absolute top-0 bottom-0 left-lg w-[2px] z-0 pointer-events-none bg-white/5">
       <motion.div
+        className="w-full h-full origin-top shadow-[0_0_20px_2px_rgba(0,161,224,1)]"
         style={{
-          width: '100%',
-          height: '100%',
           background: 'linear-gradient(180deg, transparent 0%, var(--color-primary) 50%, transparent 100%)',
           scaleY,
-          transformOrigin: 'top',
-          boxShadow: '0 0 20px 2px var(--color-primary)'
         }}
       />
     </div>
